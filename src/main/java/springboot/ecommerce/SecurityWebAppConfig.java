@@ -46,15 +46,14 @@ public class SecurityWebAppConfig extends WebSecurityConfigurerAdapter {
 				// .csrf().disable() de~ ko bi loi~ method not allowed
 				.csrf().disable().authorizeRequests()
 				// khai báo đường dẫn của request
-				.antMatchers("/*")
-				// cho phép tất cả các user đều được phép truy cập
-				.permitAll()
-				// khai báo đường dẫn của request
-				.antMatchers("/customer/*")
+				.antMatchers("/customer/**")
 				// chỉ cho phép các user có GrantedAuthority là MEMBER mới được phép truy cập
+				//.hasAnyRole(new String[] {"CUSTOMER","SHOP"})
 				.hasAnyRole("CUSTOMER")
+				.antMatchers("/shop/**")
+				.hasAnyRole("SHOP")
 				// khai báo đường dẫn của request
-				.antMatchers("/admin/*")
+				.antMatchers("/admin/**")
 				// chỉ cho phép các user có GrantedAuthority là ADMIN mới được phép truy cập
 				.hasRole("ADMIN").and().formLogin()
 				// đường dẫn tới trang chứa form đăng nhập
@@ -70,12 +69,18 @@ public class SecurityWebAppConfig extends WebSecurityConfigurerAdapter {
 				.exceptionHandling().accessDeniedPage("/accessDenied")
 				//.and().rememberMe().key("uniqueAndSecret")
 				//.tokenValiditySeconds(43200)
-				.and().logout().permitAll();
+				.and().logout()
+				.logoutUrl("/logout")
+				.logoutSuccessUrl("/login")
+				.invalidateHttpSession(true)
+				.deleteCookies("JSESSIONID")
+				.permitAll();
 	}
 
 	public static void main(String[] args) {
-		String encoded = new BCryptPasswordEncoder().encode("a");
+		String encoded = new BCryptPasswordEncoder().encode("customer");
 		System.out.println(encoded);
+		//System.out.println(new BCryptPasswordEncoder().matches("admin", "$2a$10$MLvNg0IKM2.0iSC4PlCGbeh1Rwb/nzeacZY4ywyncKpaHFF9yDKDW"));
 	}
 
 }

@@ -1,3 +1,9 @@
+/** 
+ * @Description : Register new customer's account
+ * @author  : ChuongDN
+ * @history : Create new by ChuongDN : 2022/06/01 
+ * */
+
 package springboot.ecommerce.controller;
 
 import java.security.Principal;
@@ -5,6 +11,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,47 +42,50 @@ public class RegisterController {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
-//	@GetMapping("/loginRegis")
-//	public String showRegister(Model model) {
-//		model.addAttribute("user", new UserEntity());
-//		return "login-regis";
-//	}
+	@GetMapping("/register")
+	public String showRegister(Model model) {
+		model.addAttribute("user", new UserEntity());
+		return "register";
+	}
 	
-//	@PostMapping("/doRegister")
-//	public String doRegister(Model model, @ModelAttribute(name = "user") @Valid UserEntity user,
-//			BindingResult result, @RequestParam("email") String email, @RequestParam("username") String username) {
-//		List<UserEntity> list = userService.findAllUser();
-//		for (UserEntity userEntity : list) {
-//	/*if (result.hasErrors() || user.getPassword().equals(user.getConfirmPassword()) == false) {
-//				model.addAttribute("member", member);
-//				model.addAttribute("message", "Passwords don't match");
-//				return "register";
-//			} else */ 
-//				if (result.hasErrors() || userEntity.getEmail().equalsIgnoreCase(email)) {
-//				model.addAttribute("message2", " Email " + email + " is exist");
-//				return "login-regis";
-//			} else if (result.hasErrors() || userEntity.getUsername().equalsIgnoreCase(username)) {
-//				model.addAttribute("message1", " Username " + username + " is exist");
-//				return "login-regis";
-//
-//			}
-//		}
-//		
-//		LocalDate date1 = LocalDate.now();
-//		user.setCreateTime(date1);
-//		
-//		// Set role
-//		List<RoleEntity> listRole = roleService.findAllRole();
-//		listRole.removeIf(n -> !(n.getName().equalsIgnoreCase("ROLE_CUSTOMER")));
-//		user.setRoles(listRole);
-//		user.setPassword(passwordEncoder.encode(user.getPassword()));
-//		userService.saveUser(user);
-//		return "redirect:/test";
-//	}
+	@PostMapping("/doRegister")
+	public String doRegister(Model model, @ModelAttribute(name = "user") @Valid UserEntity user,
+			BindingResult result, @RequestParam("email") String email, @RequestParam("username") String username) {
+		List<UserEntity> list = userService.findAllUser();
+		for (UserEntity userEntity : list) {
+	/*if (result.hasErrors() || user.getPassword().equals(user.getConfirmPassword()) == false) {
+				model.addAttribute("member", member);
+				model.addAttribute("message", "Passwords don't match");
+				return "register";
+			} else */ 
+			if (result.hasErrors()) {
+				return "register";
+			} else if(userEntity.getEmail().equalsIgnoreCase(email))
+			{
+				model.addAttribute("message2", " Email " + email + "đã tồn tại!!");
+				return "register";
+			}
+			else if (result.hasErrors() || userEntity.getUsername().equalsIgnoreCase(username)) {
+				model.addAttribute("message1", " Username " + username + "đã tồn tại!!");
+				return "register";
+			}
+		}
+		
+		LocalDate date1 = LocalDate.now();
+		user.setCreateTime(date1);
+		
+		// Set role
+		List<RoleEntity> listRole = roleService.findAllRole();
+		listRole.removeIf(n -> !(n.getName().equalsIgnoreCase("ROLE_CUSTOMER")));
+		user.setRoles(listRole);
+		user.setPassword(passwordEncoder.encode(user.getPassword()));
+		userService.saveUser(user);
+		return "redirect:/login";
+	}
 	
 	@GetMapping({ "/login" })
 	public String login() {
-		return "login-regis";
+		return "login";
 	}
 	
 	@RequestMapping(value = "/email", method = RequestMethod.GET)
@@ -91,17 +101,15 @@ public class RegisterController {
 	@GetMapping("/checkRole")
 	public String checkRole(HttpServletRequest request) {
 		if (request.isUserInRole("ROLE_ADMIN")) {
-			return "redirect:/admin/testRole";
+			return "redirect:/admin/mainAdmin";
 		}
-		return "redirect:/test2";
+		return "redirect:/home";
 	}
 	
 //	@GetMapping(value = "/logout")
-//	public String logout(HttpSession session, Cookie cookie) {
-//		cookie = null;
-//		System.out.println("logout ok");
-//		return "redirect:/login";
+//	public String logout(HttpSession session) {
+//		session.invalidate();
+//		return "redirect:/home";
 //	}
-
 	
 }

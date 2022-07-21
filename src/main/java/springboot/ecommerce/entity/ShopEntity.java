@@ -2,11 +2,14 @@ package springboot.ecommerce.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.Getter;
@@ -30,9 +33,13 @@ public class ShopEntity {
 	private String description;
 	
 	private String linkImage;
+
+	private String shopUrl;
+
+	private Integer status;
 	
 	private String email;
-
+	
 	@OneToMany(mappedBy = "shopEntity")
 	private List<OrderEntity> orderEntity;
 	
@@ -43,5 +50,12 @@ public class ShopEntity {
 		
 	}
 	
+	@OneToOne(mappedBy = "shopEntity", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private UserEntity userEntity;
 	
+	@OneToMany(mappedBy = "shopEntity")
+	private List<ProductEntity> proEntities;
+	
+	@OneToMany(mappedBy = "shopEntity")
+	private List<DiscountEntity> discountList;
 }

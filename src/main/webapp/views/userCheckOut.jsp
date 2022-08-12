@@ -987,15 +987,19 @@
 									<div class="order-box__mid-left">
 										<div class="order-box__product">
 											<div class="order-product__img">
-												<img src="${item.pathImage}" width="85px" height="85px" />
+<<<<<<< HEAD
+												<img src="/${item.pathImage}" width="85px" height="85px" />
+=======
+												<img src="${pageContext.request.contextPath}/${item.pathImage}" width="85px" height="85px" />
+>>>>>>> 0b7cd9b3b3848ffa06720cd3e3598284573c1fca
 											</div>
 											<div class="order-product__detail">
 												<div class="order-product__name">${item.name}</div>
 												<div class="order-product__description">
-													Size: <span>${item.size}</span>
+													Size: <span class="text-highlight" style="font-weight: bold;">${item.size}</span>
 												</div>
 												<div class="order-product__description">
-													Color <span>${item.color}</span>
+													Color <span class="text-highlight"  style="font-weight: bold;">${item.color}</span>
 												</div>
 
 											</div>

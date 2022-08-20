@@ -115,10 +115,18 @@
 					<!-- end Header-center -->
 					<!-- Header-right -->
 					<ul class="header-bottom-right">
-						<li class="header-bottom-right-item">
-							<a href="${pageContext.request.contextPath}/cart" >
+						<li class="header-bottom-right-items">
+							<div class="header-bottom-right-item">
+								<a href="#"> <i class="far fa-bell"></i>
+								</a>
+							</div>
+						</li>
+						<li class="header-bottom-right-items">
+							<div class="header-bottom-right-item">
+								<a href="${pageContext.request.contextPath}/cart" >
 								<i class="fas fa-shopping-bag"><span class="badge" id="quantity-product-in-cart"></span></i>
 							</a>
+							</div>
 						</li>
 						<li class="header-bottom-right-items user action ">
 							<div class="profile" onclick="menuToggle();">
@@ -127,22 +135,12 @@
 									</a>
 								</div>
 								<div class="profile-right">
-									<c:choose>
-										<c:when test="${sessionScope.email == null}">
-											<a class="about-user" href="#"> <span
-												class="about-user-1">Tài khoản</span> <span
-												class="about-user-2">Xin chào!</span>
-											</a>
-										</c:when>
-										<c:when test="${sessionScope.email != null}">
-											<a class="about-user"
-												href="${pageContext.request.contextPath}/customer/updateProfile">
-												<span class="about-user-2">Xin chào!</span> <span
-												class="about-user-1"><c:out
-														value="${sessionScope.email }"></c:out></span>
-											</a>
-										</c:when>
-									</c:choose>
+
+									<a class="about-user" href="#"> <span class="about-user-1"></span>
+										<span class="about-user-2">Xin chào!</span> <span
+										class="about-user-1"><c:out
+												value="${sessionScope.email }"></c:out></span>
+									</a>
 								</div>
 							</div>
 							<div class="menu">
@@ -153,15 +151,18 @@
 											<li class="border-top"><a href="register">Đăng Ký</a></li>
 										</c:when>
 										<c:when test="${sessionScope.email != null}">
-											<li><a href="logout"> Logout </a></li>
+											<li><a
+												href="${pageContext.request.contextPath}/customer/updateProfile">
+													Thông tin </a></li>
+											<li><a href="logout"> Đăng xuất </a></li>
+
 										</c:when>
+
 									</c:choose>
 								</ul>
 							</div>
 						</li>
-
 					</ul>
-
 					<!-- end Header-right -->
 				</div>
 				<!-- ------------------------ Begin BREADCRUMB ------------------------------- -->
@@ -1852,203 +1853,123 @@
 	<!-- ----------------- End STICKY ---------------------- -->
 	<!-- ----------------- Begin FOOTER---------------------- -->
 	<footer class="footer">
-	<div class="footer_top">
-		<div class="footer_top-item">
-			<div class="block_wrapper">
-				<ul class="block_list">
-					<li class="block_item logo"><a href="/"><img
-							src="${pageContext.request.contextPath}/imgs/logo-white.png"
-							alt="logo-white" /></a></li>
-					<li class="block_item"><a class="block_link"
-						href="tel:0906.880.960" title="Hotline: 0906.880.960">Hotline:
-							0906.880.960</a></li>
-					<li class="block_item"><a class="block_link" href="/"
-						title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a></li>
-					<li class="block_item"><a class="block_link"
-						href="email:customer@dosiinvn.com"
-						title="Email: customer@dosiinvn.com">Email:
-							customer@dosiinvn.com</a></li>
-				</ul>
-				<h5 class="block_heading">Kết nối với chúng tôi</h5>
-				<ul class="block-app-list">
-					<li class="block-app-item"><a
-						href="https://www.instagram.com/dosiin.magz/" title="Instagram"><i
-							class="fab fa-instagram-square"></i></a></li>
-					<li class="block-app-item"><a
-						href="https://www.facebook.com/dosiinvietnam/" title="Facebook"><i
-							class="fab fa-facebook"></i></a></li>
-				</ul>
-			</div>
-			<div class="block_wrapper">
-				<h5 class="block_heading">Về Dosiin</h5>
+		<div class="footer_top">
+			<div class="footer_top-item">
+				<div class="block_wrapper">
+					<ul class="block_list">
+						<li class="block_item logo">
+						<a href="/"><img
+								src="${pageContext.request.contextPath}/imgs/logo.png"
+								alt="logo-white" /></a></li>
+						<li class="block_item"><a class="block_link"
+							href="tel:0906.880.960" title="Hotline: 0906.880.960">Hotline:
+								0933.932.517</a></li>
+						<li class="block_item"><a class="block_link" href="/"
+							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
+						</li>
+						<li class="block_item"><a class="block_link"
+							href="email:customer@dosiinvn.com"
+							title="Email: customer@dosiinvn.com">Email:
+							Trongldde140257@fpt.edu.vn</a></li>
+					</ul>
+					<h5 class="block_heading">Kết nối với chúng tôi</h5>
+					<ul class="block-app-list">
+						<li class="block-app-item"><a
+							href="https://www.instagram.com/" title="Instagram"><i
+								class="fab fa-instagram-square"></i></a></li>
+						<li class="block-app-item"><a class="dosiin_d-block"
+							href="https://www.facebook.com/daihocfptdanang" title="Facebook"><i
+								class="fab fa-facebook"></i></a></li>
+					</ul>
+				</div>
+				<div class="block_wrapper">
+					<h5 class="block_heading">Về FEC</h5>
 
-				<ul class="block_list">
-					<li class="block_item"><a class="block_link" href="#">Các
-							điều khoản khác</a></li>
-					<li class="block_item"><a class="block_link" href="#">Hợp
-							tác</a></li>
-					<li class="block_item"><a class="block_link" href="#">Hỏi
-							và Đáp</a></li>
-					<li class="block_item"><a class="block_link" href="#">Hạn
-							chế với thời gian và quản lý</a></li>
-					<li class="block_item"><a class="block_link" href="#">Nghĩa
-							vụ của người bán</a></li>
-					<li class="block_item"><a class="block_link" href="#">Nghĩa
-							vụ của khách hàng</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách vận chuyển</a></li>
-					<li class="block_item"><a class="block_link" href="#">Về
-							chúng tôi</a></li>
-				</ul>
-			</div>
-			<div class="block_wrapper">
-				<h5 class="block_heading">Nội dung chính sách</h5>
-				<ul class="block_list">
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách bảo mật</a></li>
-					<li class="block_item"><a class="block_link" href="#">Điều
-							khoản dịch vụ</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách thành viên</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách đổi trả hàng</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách thanh toán</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách bảo mật thanh toán</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách dành cho khách hàng</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách bảo hành sản phẩm</a></li>
-				</ul>
-			</div>
-			<div class="block_wrapper">
-				<h5 class="block_heading">Cách thức thanh toán</h5>
-				<ul class="block_card-list">
-					<li class="block_card-item">
-						<div class="card-item_list">
-							<a class="block_link" href="/" title="COD Tiền mặt">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/cod.webp"
-											alt="Tiền mặt" title="Tiền mặt" />
+					<ul class="block_list">
+						<li class="block_item"><a class="block_link" href="#">Các
+								điều khoản khác</a></li>
+						<li class="block_item"><a class="block_link" href="#">Hợp
+								tác</a></li>
+						<li class="block_item"><a class="block_link" href="#">Hỏi
+								và Đáp</a></li>
+						<li class="block_item"><a class="block_link" href="#">Hạn
+								chế với thời gian và quản lý</a></li>
+						<li class="block_item"><a class="block_link" href="#">Nghĩa
+								vụ của người bán</a></li>
+						<li class="block_item"><a class="block_link" href="#">Nghĩa
+								vụ của khách hàng</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách vận chuyển</a></li>
+						<li class="block_item"><a class="block_link" href="#">Về
+								chúng tôi</a></li>
+					</ul>
+				</div>
+				<div class="block_wrapper">
+					<h5 class="block_heading">Nội dung chính sách</h5>
+					<ul class="block_list">
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách bảo mật</a></li>
+						<li class="block_item"><a class="block_link" href="#">Điều
+								khoản dịch vụ</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách thành viên</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách thanh toán</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách bảo mật thanh toán</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách dành cho khách hàng</a></li>
+					</ul>
+				</div>
+				<div class="block_wrapper">
+					<h5 class="block_heading">Cách thức thanh toán</h5>
+					<ul class="block_card-list">
+						<li class="block_card-item">
+							<div class="card-item_list">
+								<a class="block_link" href="/" title="COD Tiền mặt">
+									<div class="card-item_box">
+										<div class="card-item_icon">
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/cod.webp"
+												alt="Tiền mặt" title="Tiền mặt">
+										</div>
+										<div class="card-item_text">Tiền mặt</div>
 									</div>
-									<div class="card-item_text">Tiền mặt</div>
-								</div>
-							</a><a class="block_link" href="/" title="Momo">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/momo.png"
-											alt="Momo" title="Momo" />
+								</a>
+								<%-- <a class="block_link" href="/" title="Momo">
+									<div class="card-item_box">
+										<div class="card-item_icon">
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/momo.png"
+												alt="Momo" title="Momo" />
+										</div>
+										<div class="card-item_text">Momo</div>
 									</div>
-									<div class="card-item_text">Momo</div>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li class="block_card-item">
-						<div class="card-item_list">
-							<a class="block_link" href="/" title="VISA, MASTER, JCB">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
-											alt="VISA, MASTER, JCB" title="VISA, MASTER, JCB" />
-									</div>
-									<div class="card-item_text">VISA, MASTER, JCB</div>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li class="block_card-item">
-						<div class="card-item_list">
-							<a class="block_link" href="/" title="Internet Banking">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
-											alt="Internet Banking" title="Internet Banking" />
-									</div>
-									<div class="card-item_text">Internet Banking</div>
-								</div>
-							</a>
-						</div>
-					</li>
-				</ul>
-				<h5 class="block_heading">Đối tác vận chuyển</h5>
-				<ul class="block_delivery-list">
-					<li class="block_delivery-item"><a class="delivery-item_link"
-						href="/" title="Giao hàng nhanh">
-							<div class="delivery-item_icon">
-								<img
-									src="${pageContext.request.contextPath}/imgs/social/ghn.webp"
-									alt="Giao hàng nhanh" />
+								</a> --%>
 							</div>
-					</a></li>
-					<li class="block_delivery-item"><a class="delivery-item_link"
-						href="/" title="Giao hàng tiết kiệm">
-							<div class="delivery-item_icon">
-								<img
-									src="${pageContext.request.contextPath}/imgs/social/ghtk.png"
-									alt="Giao hàng tiết kiệm" />
+						</li>
+						
+						<%-- <li class="block_card-item">
+							<div class="card-item_list">
+								<a class="block_link" href="/" title="Internet Banking">
+									<div class="card-item_box">
+										<div class="card-item_icon">
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
+												alt="Internet Banking" title="Internet Banking" />
+										</div>
+										<div class="card-item_text">Internet Banking</div>
+									</div>
+								</a>
 							</div>
-					</a></li>
-				</ul>
-			</div>
-			<div class="block_wrapper">
-				<h5 class="block_heading">Nền tảng khác</h5>
-				<ul class="block_application-list">
-					<li class="block_application-item"><a
-						class="application-item_link" href="/" title="Google Play"><img
-							src="${pageContext.request.contextPath}/imgs/app/android.png"
-							alt="Google Play" width="130" height="40" /></a></li>
-					<li class="block_application-item"><a
-						class="application-item_link" href="/" title="App Store"><img
-							src="${pageContext.request.contextPath}/imgs/app/ios.png"
-							alt="App Store" width="130" height="40" /></a></li>
-				</ul>
-				<div class="block_subscribe">
-					<h5 class="block_heading">Đăng ký nhận tin</h5>
-					<form class="block_subscribe-wrapper" action="">
-						<input type="text" name="subscribe_email" id="subscribe_email"
-							size="20" placeholder="Email" class="input-subscribe-email" />
-						<div class="divider_wrapper">
-							<div class="v-divider"></div>
-						</div>
-						<div class="block_subscribe-submit">
-							<button type="submit"
-								class="btn text-highlight block_subscribe-button">
-								<span>Đăng ký</span>
-							</button>
-						</div>
-					</form>
+						</li> --%>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="divider"></div>
-		<div class="footer_top-info">
-			<div class="footer_top-left">
-				<p>Công ty cổ phần DOSI GROUP</p>
-				<p>68/21 Hoàng Diệu, Phường 12, Quận 4. Thành phố Hồ Chí Minh</p>
-			</div>
-			<div class="footer_top-right">
-				<div class="footer_top-right-info">
-					<p>GPĐKKD: 0314119937 do Sở KH và ĐT TPHCM cấp ngày 30/01/2019</p>
-					<p>Đăng ký thay đổi lần thứ 7, ngày 07 tháng 06 năm 2021</p>
-				</div>
-				<div class="footer_top-approve">
-					<img
-						src="${pageContext.request.contextPath}/imgs/social/bo-cong-thuong.png"
-						alt="Bộ công thương" sizes="" srcset="" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer_bot">Copyright 2015-2021 &copy; Công ty cổ
-		phần DOSI GROUP</div>
-</footer>
+		<div class="footer_bot">Copyright 2022 &copy; FPT University
+			DaNang</div>
+	</footer>
 	<!-- ----------------- End FOOTER---------------------- -->
 	<script src="${pageContext.request.contextPath}/js/utils.js"></script>
 	<script src="${pageContext.request.contextPath}/js/modal.js"></script>

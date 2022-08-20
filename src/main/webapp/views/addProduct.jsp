@@ -67,16 +67,15 @@
 
 				<!-- Header-left -->
 				<ul class="header-bottom-left">
-					<div
-						class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-						<a href="#menu-toggle" class="btn btn-default menu-toggle"><i
+				<!-- begin SideBar toggle -->
+					<div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+						<a  onclick="openNav() class="btn btn-default menu-toggle openbtn"><i
 							class="bx bx-menu bx-sm"></i></a>
-
-
 					</div>
+					<!-- emd SideBar toggle -->
 					<li class="header-bottom-logo"><a
 						href="${pageContext.request.contextPath}/home"> <img
-							src="${pageContext.request.contextPath}/newimage/logo.svg"
+							src="${pageContext.request.contextPath}/imgs/logo.png"
 							alt="logo" />
 					</a></li>
 				</ul>
@@ -138,7 +137,7 @@
 	</header>
 	<!-- end Header -->
 	<!--========== NAV ==========-->
-	<aside class="nav" id="layout-menu">
+	<aside class="nav" id="layout-menu" onclick="closeNav()">
 		<nav class="nav__container " id="layout-navbar">
 
 			<div class="list-group">
@@ -580,7 +579,17 @@
 			</div>
 		</div>
 	</div>
+<script>
+function openNav() {
+  document.getElementById("layout-menu").style.left = "0";
+  document.getElementById("content-wrapper").style.opacity = "0.5";
+}
 
+function closeNav() {
+  document.getElementById("layout-menu").style.left = "-100%";
+  document.getElementById("content-wrapper").style.opacity= "1";
+}
+</script>
 	<script src="${pageContext.request.contextPath}/newjs/AddProduct.js"></script>
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
 </body>

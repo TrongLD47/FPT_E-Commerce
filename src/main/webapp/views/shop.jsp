@@ -53,7 +53,7 @@
 				<div class="header-top-right">
 					<div>
 						<span class="header-top-right-link">Hotline</span> <a
-							class="header-top-right-link" href="tel:0906880960">0906.880.960</a>
+							class="header-top-right-link" href="tel:033932517">0933.932.517</a>
 					</div>
 					<div>
 						<i class="fab fa-facebook-messenger header-top-right-link"
@@ -69,7 +69,10 @@
 				<ul class="header-bottom-left">
 					<li class="header-bottom-logo"><a
 						href="${pageContext.request.contextPath}/home"> <img
-							src="/assets/img/logo.svg" alt="logo" />
+							src="${pageContext.request.contextPath}/imgs/logo.png" alt="logo" />						
+					</a></li>
+					<li class="header-bottom-item"><a href="#"> <span
+							class="header-bottom-item-text text-hover active">FPT E-Commerce</span>
 					</a></li>
 				</ul>
 				<!-- end Header-left -->
@@ -136,8 +139,8 @@
 			<!-- end Header - bottom -->
 
 			<!-- ------------------------ Begin BREADCRUMB ------------------------------- -->
-			<div class="header__menu">
-				<a class="header__prev"><i class="fas fa-angle-left"></i><span
+			<div class="header__menu">	
+				<a class="header__prev" onclick="history.back()" style="cursor: pointer;"><i class="fas fa-angle-left"></i><span
 					class="menu__text--back">Quay lại</span></a>
 				<ul class="menu">
 					<li class="menu__sub active" onclick="activeTab(0)"><a
@@ -186,10 +189,10 @@
 					</div>
 				</div>
 				<div class="brand-item__action">
-					<a class="brand-item__btn--follow btn btn-primary"> <i
+					<!-- <a class="brand-item__btn--follow btn btn-primary"> <i
 						class="fas fa-user-plus"></i> <span
 						class="brand-item__btn--follow__text ">Theo dõi</span>
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<div class="brand__right">
@@ -492,9 +495,9 @@
 						</div>
 				</a></li>
 			</ul>
-			<button class="button primary">
+			<!-- <button class="button primary">
 				<span>Xem thêm</span>
-			</button>
+			</button> -->
 		</section>
 		<!-- ------------------------ End PRODUCT ------------------------------- -->
 	</div>
@@ -1163,31 +1166,33 @@
 			<div class="footer_top-item">
 				<div class="block_wrapper">
 					<ul class="block_list">
-						<li class="block_item logo"><a href="/"><img
-								src="/assets/img/logo-white.png" alt="logo-white" /></a></li>
+						<li class="block_item logo">
+						<a href="/"><img
+								src="${pageContext.request.contextPath}/imgs/logo.png"
+								alt="logo-white" /></a></li>
 						<li class="block_item"><a class="block_link"
 							href="tel:0906.880.960" title="Hotline: 0906.880.960">Hotline:
-								0906.880.960</a></li>
+								0933.932.517</a></li>
 						<li class="block_item"><a class="block_link" href="/"
 							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
 						</li>
 						<li class="block_item"><a class="block_link"
 							href="email:customer@dosiinvn.com"
 							title="Email: customer@dosiinvn.com">Email:
-								customer@dosiinvn.com</a></li>
+							Trongldde140257@fpt.edu.vn</a></li>
 					</ul>
 					<h5 class="block_heading">Kết nối với chúng tôi</h5>
 					<ul class="block-app-list">
 						<li class="block-app-item"><a
-							href="https://www.instagram.com/dosiin.magz/" title="Instagram"><i
+							href="https://www.instagram.com/" title="Instagram"><i
 								class="fab fa-instagram-square"></i></a></li>
 						<li class="block-app-item"><a class="dosiin_d-block"
-							href="https://www.facebook.com/dosiinvietnam/" title="Facebook"><i
+							href="https://www.facebook.com/daihocfptdanang" title="Facebook"><i
 								class="fab fa-facebook"></i></a></li>
 					</ul>
 				</div>
 				<div class="block_wrapper">
-					<h5 class="block_heading">Về Dosiin</h5>
+					<h5 class="block_heading">Về FEC</h5>
 
 					<ul class="block_list">
 						<li class="block_item"><a class="block_link" href="#">Các
@@ -1233,51 +1238,41 @@
 								<a class="block_link" href="/" title="COD Tiền mặt">
 									<div class="card-item_box">
 										<div class="card-item_icon">
-											<img src="/assets/img/social/cod.webp" alt="Tiền mặt"
-												title="Tiền mặt">
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/cod.webp"
+												alt="Tiền mặt" title="Tiền mặt">
 										</div>
 										<div class="card-item_text">Tiền mặt</div>
 									</div>
-								</a><a class="block_link" href="/" title="Momo">
+								</a>
+								<%-- <a class="block_link" href="/" title="Momo">
 									<div class="card-item_box">
 										<div class="card-item_icon">
-											<img src="/assets/img/social/momo.png" alt="Momo"
-												title="Momo" />
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/momo.png"
+												alt="Momo" title="Momo" />
 										</div>
 										<div class="card-item_text">Momo</div>
 									</div>
-								</a>
+								</a> --%>
 							</div>
 						</li>
-						<li class="block_card-item">
-							<div class="card-item_list">
-								<a class="block_link" href="/" title="VISA, MASTER, JCB">
-									<div class="card-item_box">
-										<div class="card-item_icon">
-											<img src="/assets/img/social/credit-card.png"
-												alt="VISA, MASTER, JCB" title="VISA, MASTER, JCB" />
-										</div>
-										<div class="card-item_text">VISA, MASTER, JCB</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="block_card-item">
+						
+						<%-- <li class="block_card-item">
 							<div class="card-item_list">
 								<a class="block_link" href="/" title="Internet Banking">
 									<div class="card-item_box">
 										<div class="card-item_icon">
-											<img src="/assets/img/social/credit-card.png"
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
 												alt="Internet Banking" title="Internet Banking" />
 										</div>
 										<div class="card-item_text">Internet Banking</div>
 									</div>
 								</a>
 							</div>
-						</li>
+						</li> --%>
 					</ul>
-
-
 				</div>
 			</div>
 		</div>

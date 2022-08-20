@@ -269,17 +269,22 @@ a {
 .err.show {
   display: block;
 }
-.badge {
-  background: linear-gradient(135deg, #ed55c7, #6756ca);
+.badge::before{
+  content: attr(data-notification-count);
   position: absolute;
-  top: 34px;
-  right: 11%;
-  border-radius: 10px;
+  width: 10px;
+  height:10px;
+  display: grid;
+  place-items: center;
   color: white;
-  display: flex;
-  font-size: 10px;
-  padding: 4px 7px;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ed55c7, #6756ca);
+  top: -12px;
+  right: -20px;
+  padding: 4px 4px;
+}
+.badge {
+  position: relative;
 }

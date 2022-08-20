@@ -64,12 +64,7 @@
 				<!-- end Header-left -->
 				<!-- Header-right -->
 				<ul class="header-bottom-right">
-					<li class="header-bottom-right-item"><a href="#"> <i
-							class="far fa-bell"></i>
-					</a></li>
-					<li class="header-bottom-right-item"><a href="#"> <i
-							class="fas fa-shopping-bag"></i>
-					</a></li>
+					
 					<li class="header-bottom-right-items user">
 						<div class="header-bottom-right-item">
 							<a href="#"> <i class="far fa-user"></i>

@@ -18,13 +18,13 @@ var Product = {
 
                 $.each(result, function (index, value) {
                     var shop = "<div class='search-shop__item-wrapper'>" +
-                        "<a href='#'>" +
+                        "<a href='shop-detail?id="+value.id+"'>" +
                         "<div class='search-shop__item'>" +
                         "<div class='search-shop__item-left'>" +
                         "<div class='search-shop__image-wrapper'>" +
                         "<img src='"+ value.linkImage+"'" +
                         "alt='shop-image' style='width: 80px; height: 80px;'>" +
-                        "<div class='badge'></div>" +
+                        "<div class=''></div>" +
                         "</div>" +
                         "<div class='search-shop__info-wrapper'>" +
                         "<div class='search-shop__name'>"+ value.name+"</div>" +

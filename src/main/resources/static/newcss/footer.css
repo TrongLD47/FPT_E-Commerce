@@ -15,7 +15,9 @@
   text-align: center;
   color: var(--text-color);
 }
-
+.block_item{
+	list-style:none;
+}
 .block_item.logo,
 .block_heading {
   padding-top: 2.5rem;

@@ -45,6 +45,7 @@ a {
   padding: 0.5rem 1rem;
   gap: 0.5rem;
 }
+
 .btn.btn-badge-border {
   width: fit-content;
   border-radius: 2px;
@@ -60,9 +61,7 @@ a {
 .btn.btn-primary i {
   fill: var(--theme-color);
 }
-.text-hover,
-.menu-hover,
-.menu-hover span {
+.text-hover {
   cursor: pointer;
   background: transparent;
   transition: color 0.5s ease-in, background 0.5s ease-in;
@@ -73,9 +72,7 @@ a {
 .btn.btn-badge i,
 .btn.btn-badge span,
 .btn.btn-badge-border i,
-.btn.btn-badge-border span,
-.text-hover:hover span,
-.menu-hover:hover span {
+.btn.btn-badge-border span {
   color: var(--theme-color);
   background: var(--theme-color);
   -webkit-background-clip: text;
@@ -105,6 +102,9 @@ a {
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
+}
+
+.section-title {
 }
 .section-description {
   color: var(--text-semi-white);
@@ -268,23 +268,4 @@ a {
 
 .err.show {
   display: block;
-}
-.badge::before{
-  content: attr(data-notification-count);
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: grid;
-  place-items: center;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #ed55c7, #6756ca);
-  top: -20px;
-  right: -20px;
-  padding: 4px 4px;
-}
-.badge {
-  position: relative;
 }

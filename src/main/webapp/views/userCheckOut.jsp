@@ -987,19 +987,18 @@
 									<div class="order-box__mid-left">
 										<div class="order-box__product">
 											<div class="order-product__img">
-<<<<<<< HEAD
-												<img src="/${item.pathImage}" width="85px" height="85px" />
-=======
+
+												
+
 												<img src="${pageContext.request.contextPath}/${item.pathImage}" width="85px" height="85px" />
->>>>>>> 0b7cd9b3b3848ffa06720cd3e3598284573c1fca
 											</div>
 											<div class="order-product__detail">
 												<div class="order-product__name">${item.name}</div>
 												<div class="order-product__description">
-													Size: <span class="text-highlight" style="font-weight: bold;">${item.size}</span>
+													Size: <span class="text-highlight" style="font-weight: bold;">${item.color}</span>
 												</div>
 												<div class="order-product__description">
-													Color <span class="text-highlight"  style="font-weight: bold;">${item.color}</span>
+													Color: <span class="text-highlight"  style="font-weight: bold;">${item.size}</span>
 												</div>
 
 											</div>
@@ -1078,133 +1077,122 @@
 </body>
 <!-- ----------------- Begin FOOTER---------------------- -->
 <footer class="footer">
-	<div class="footer_top">
-		<div class="footer_top-item">
-			<div class="block_wrapper">
-				<ul class="block_list">
-					<li class="block_item logo"><a href="/"><img
-							src="${pageContext.request.contextPath}/imgs/logo-white.png"
-							alt="logo-white" /></a></li>
-					<li class="block_item"><a class="block_link"
-						href="tel:0906.880.960" title="Hotline: 0906.880.960">Hotline:
-							0906.880.960</a></li>
-					<li class="block_item"><a class="block_link" href="/"
-						title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
-					</li>
-					<li class="block_item"><a class="block_link"
-						href="email:customer@dosiinvn.com"
-						title="Email: customer@dosiinvn.com">Email:
-							customer@dosiinvn.com</a></li>
-				</ul>
-				<h5 class="block_heading">Kết nối với chúng tôi</h5>
-				<ul class="block-app-list">
-					<li class="block-app-item"><a
-						href="https://www.instagram.com/dosiin.magz/" title="Instagram"><i
-							class="fab fa-instagram-square"></i></a></li>
-					<li class="block-app-item"><a class="dosiin_d-block"
-						href="https://www.facebook.com/dosiinvietnam/" title="Facebook"><i
-							class="fab fa-facebook"></i></a></li>
-				</ul>
-			</div>
-			<div class="block_wrapper">
-				<h5 class="block_heading">Về Dosiin</h5>
+		<div class="footer_top">
+			<div class="footer_top-item">
+				<div class="block_wrapper">
+					<ul class="block_list">
+						<li class="block_item logo">
+						<a href="/"><img
+								src="${pageContext.request.contextPath}/imgs/logo.png"
+								alt="logo-white" /></a></li>
+						<li class="block_item"><a class="block_link"
+							href="tel:0906.880.960" title="Hotline: 0906.880.960">Hotline:
+								0933.932.517</a></li>
+						<li class="block_item"><a class="block_link" href="/"
+							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
+						</li>
+						<li class="block_item"><a class="block_link"
+							href="email:customer@dosiinvn.com"
+							title="Email: customer@dosiinvn.com">Email:
+							Trongldde140257@fpt.edu.vn</a></li>
+					</ul>
+					<h5 class="block_heading">Kết nối với chúng tôi</h5>
+					<ul class="block-app-list">
+						<li class="block-app-item"><a
+							href="https://www.instagram.com/" title="Instagram"><i
+								class="fab fa-instagram-square"></i></a></li>
+						<li class="block-app-item"><a class="dosiin_d-block"
+							href="https://www.facebook.com/daihocfptdanang" title="Facebook"><i
+								class="fab fa-facebook"></i></a></li>
+					</ul>
+				</div>
+				<div class="block_wrapper">
+					<h5 class="block_heading">Về FEC</h5>
 
-				<ul class="block_list">
-					<li class="block_item"><a class="block_link" href="#">Các
-							điều khoản khác</a></li>
-					<li class="block_item"><a class="block_link" href="#">Hợp
-							tác</a></li>
-					<li class="block_item"><a class="block_link" href="#">Hỏi
-							và Đáp</a></li>
-					<li class="block_item"><a class="block_link" href="#">Hạn
-							chế với thời gian và quản lý</a></li>
-					<li class="block_item"><a class="block_link" href="#">Nghĩa
-							vụ của người bán</a></li>
-					<li class="block_item"><a class="block_link" href="#">Nghĩa
-							vụ của khách hàng</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách vận chuyển</a></li>
-					<li class="block_item"><a class="block_link" href="#">Về
-							chúng tôi</a></li>
-				</ul>
-			</div>
-			<div class="block_wrapper">
-				<h5 class="block_heading">Nội dung chính sách</h5>
-				<ul class="block_list">
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách bảo mật</a></li>
-					<li class="block_item"><a class="block_link" href="#">Điều
-							khoản dịch vụ</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách thành viên</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách thanh toán</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách bảo mật thanh toán</a></li>
-					<li class="block_item"><a class="block_link" href="#">Chính
-							sách dành cho khách hàng</a></li>
-				</ul>
-			</div>
-			<div class="block_wrapper">
-				<h5 class="block_heading">Cách thức thanh toán</h5>
-				<ul class="block_card-list">
-					<li class="block_card-item">
-						<div class="card-item_list">
-							<a class="block_link" href="/" title="COD Tiền mặt">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/cod.webp"
-											alt="Tiền mặt" title="Tiền mặt">
+					<ul class="block_list">
+						<li class="block_item"><a class="block_link" href="#">Các
+								điều khoản khác</a></li>
+						<li class="block_item"><a class="block_link" href="#">Hợp
+								tác</a></li>
+						<li class="block_item"><a class="block_link" href="#">Hỏi
+								và Đáp</a></li>
+						<li class="block_item"><a class="block_link" href="#">Hạn
+								chế với thời gian và quản lý</a></li>
+						<li class="block_item"><a class="block_link" href="#">Nghĩa
+								vụ của người bán</a></li>
+						<li class="block_item"><a class="block_link" href="#">Nghĩa
+								vụ của khách hàng</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách vận chuyển</a></li>
+						<li class="block_item"><a class="block_link" href="#">Về
+								chúng tôi</a></li>
+					</ul>
+				</div>
+				<div class="block_wrapper">
+					<h5 class="block_heading">Nội dung chính sách</h5>
+					<ul class="block_list">
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách bảo mật</a></li>
+						<li class="block_item"><a class="block_link" href="#">Điều
+								khoản dịch vụ</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách thành viên</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách thanh toán</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách bảo mật thanh toán</a></li>
+						<li class="block_item"><a class="block_link" href="#">Chính
+								sách dành cho khách hàng</a></li>
+					</ul>
+				</div>
+				<div class="block_wrapper">
+					<h5 class="block_heading">Cách thức thanh toán</h5>
+					<ul class="block_card-list">
+						<li class="block_card-item">
+							<div class="card-item_list">
+								<a class="block_link" href="/" title="COD Tiền mặt">
+									<div class="card-item_box">
+										<div class="card-item_icon">
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/cod.webp"
+												alt="Tiền mặt" title="Tiền mặt">
+										</div>
+										<div class="card-item_text">Tiền mặt</div>
 									</div>
-									<div class="card-item_text">Tiền mặt</div>
-								</div>
-							</a><a class="block_link" href="/" title="Momo">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/momo.png"
-											alt="Momo" title="Momo" />
+								</a>
+								<%-- <a class="block_link" href="/" title="Momo">
+									<div class="card-item_box">
+										<div class="card-item_icon">
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/momo.png"
+												alt="Momo" title="Momo" />
+										</div>
+										<div class="card-item_text">Momo</div>
 									</div>
-									<div class="card-item_text">Momo</div>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li class="block_card-item">
-						<div class="card-item_list">
-							<a class="block_link" href="/" title="VISA, MASTER, JCB">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
-											alt="VISA, MASTER, JCB" title="VISA, MASTER, JCB" />
+								</a> --%>
+							</div>
+						</li>
+						
+						<%-- <li class="block_card-item">
+							<div class="card-item_list">
+								<a class="block_link" href="/" title="Internet Banking">
+									<div class="card-item_box">
+										<div class="card-item_icon">
+											<img
+												src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
+												alt="Internet Banking" title="Internet Banking" />
+										</div>
+										<div class="card-item_text">Internet Banking</div>
 									</div>
-									<div class="card-item_text">VISA, MASTER, JCB</div>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li class="block_card-item">
-						<div class="card-item_list">
-							<a class="block_link" href="/" title="Internet Banking">
-								<div class="card-item_box">
-									<div class="card-item_icon">
-										<img
-											src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
-											alt="Internet Banking" title="Internet Banking" />
-									</div>
-									<div class="card-item_text">Internet Banking</div>
-								</div>
-							</a>
-						</div>
-					</li>
-				</ul>
+								</a>
+							</div>
+						</li> --%>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="footer_bot">Copyright 2022 &copy; FPT University
-		DaNang</div>
-</footer>
+		<div class="footer_bot">Copyright 2022 &copy; FPT University
+			DaNang</div>
+	</footer>
 
 </html>

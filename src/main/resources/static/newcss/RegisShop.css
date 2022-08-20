@@ -4,6 +4,9 @@ body{
     margin: 9px;
     padding: 0;
 }
+a{
+	list-style:none !important;
+}
 .content-wrapper{
     font-family: 'Poppins';
     margin-top: -1% !important;
@@ -18,7 +21,7 @@ body{
 .vendor_block1{
     align-items: center;
     background: #eaeaea;
-    margin-top: 50px;
+    margin-top: 90px;
     padding: 20px 90px 0 90px ;
 }
 
@@ -245,6 +248,7 @@ margin: 0;
 .block-app-list,
 .block_application-list{
     padding: 0;
+    list-style:none;
 }
 .block_subscribe-wrapper input::placeholder{
     font-size: 13px;

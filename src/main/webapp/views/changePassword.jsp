@@ -82,13 +82,13 @@
 				<ul class="header-bottom-left">
 					<li class="header-bottom-logo"><a
 						href="${pageContext.request.contextPath}/home"> <img
-							src="/assets/imgs/logo.svg" alt="logo" />
+							src="${pageContext.request.contextPath}/imgs/logo.png" alt="logo" />
 					</a></li>
 					<li class="header-bottom-item"><a href="#"> <span
-							class="header-bottom-item-text text-hover active">Shopping</span>
+							class="header-bottom-item-text text-hover active">FPT E-Commerce</span>
 					</a></li>
 					<li class="header-bottom-item"><a href="#"> <span
-							class="header-bottom-item-text text-hover">Style</span>
+							class="header-bottom-item-text text-hover"></span>
 					</a></li>
 				</ul>
 				<!-- end Header-left -->
@@ -155,19 +155,10 @@
 			<!-- end Header - bottom -->
 
 			<!-- ------------------------ Begin BREADCRUMB ------------------------------- -->
-			<ul class="category">
-				<li class="category-item text-hover"><a href="#">Sản phẩm</a></li>
-				<li class="category-item text-hover"><a href="#">Nam</a></li>
-				<li class="category-item text-hover"><a href="#">Nữ</a></li>
-				<li class="category-item text-hover"><a href="#">Phụ kiện</a></li>
-				<li class="category-item text-hover"><a href="#">Thương
-						hiệu</a></li>
-				<li class="category-item text-hover"><a href="#">Xếp hạng</a></li>
-				<li class="category-item text-hover"><a href="#">Mới nhất </a>
-				</li>
-				<li class="category-item text-hover"><a href="#">Giá sốc </a></li>
-				<li class="category-item text-hover"><a href="#">Sự kiện </a></li>
-			</ul>
+			<div class="header__menu">	
+				<a class="header__prev" onclick="history.back()" style="cursor: pointer;"><i class="fas fa-angle-left"></i><span
+					class="menu__text--back">Quay lại</span></a>				
+			</div>
 			<!-- ------------------------ End BREADCRUMB ------------------------------- -->
 		</div>
 	</header>
@@ -180,7 +171,8 @@
 				<nav class="sidebar" id="sidebar">
 					<div class="aside__user">
 						<div class="aside__user-img">
-							<img src="/assets/imgs/shop/shop-banner.webp" />
+							<img
+								src="${pageContext.request.contextPath}/${sessionScope.path }" />
 						</div>
 						<div class="aside__user-name">Name Of User</div>
 					</div>

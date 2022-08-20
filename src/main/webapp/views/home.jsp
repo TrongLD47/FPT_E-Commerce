@@ -77,7 +77,7 @@
 					<div class="header-top-right">
 						<div>
 							<span class="header-top-right-link">Hotline</span> <a
-								class="header-top-right-link" href="tel:0906880960">0906.880.960</a>
+								class="header-top-right-link" href="tel:0933932517">0933.932.517</a>
 						</div>
 						<div>
 							<i class="fab fa-facebook-messenger header-top-right-link"
@@ -95,7 +95,7 @@
 								src="./imgs/logo.png" alt="logo" />
 						</a></li>
 						<li class="header-bottom-item"><a href="#"> <span
-								class="header-bottom-item-text text-hover active">Shopping</span>
+								class="header-bottom-item-text text-hover active">FPT E-Commerce</span>
 						</a></li>
 						<li class="header-bottom-item"><a href="#"> <span
 								class="header-bottom-item-text text-hover"></span>
@@ -162,1223 +162,7 @@
 
 					<!-- end Header-right -->
 				</div>
-				<!-- ------------------------ Begin BREADCRUMB ------------------------------- -->
-				<ul class="category">
-					<li class="category-item"><a href="#" class="text-hover"><span>Sản
-								phẩm</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Nam</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Nữ</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Phụ
-								kiện</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Thương
-								hiệu</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Xếp
-								hạng</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Mới
-								nhất</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Giá
-								sốc</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-					<li class="category-item"><a href="#" class="text-hover"><span>Sự
-								kiện</span></a>
-						<div class="category__dropdown-wrapper">
-							<ul class="category__dropdown">
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													thun</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo cổ trái tim</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-									</ul>
-								</li>
-								<li class="category__dropdown-block">
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo vải Phượng Hoàng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo nỉ Phượng Hoàng</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Áo
-													khoác</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo khoác da hổ</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Áo Bomber</span></a></li>
-									</ul>
-									<ul class="dropdown__list--category">
-										<li class="dropdown__item--category menu-hover"><a
-											href="#"><i class="fa-solid fa-shirt"></i><span>Quần</span></a>
-										</li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống rộng</span></a></li>
-										<li class="dropdown__item--category text-hover"><a
-											href="#"><span>Quần ống loe</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</div></li>
-				</ul>
-				<!-- ------------------------ End BREADCRUMB ------------------------------- -->
+				
 				<!-- end Header - bottom -->
 			</div>
 		</header>
@@ -1461,16 +245,17 @@
 												<p class="card-des truncate"
 													href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
 													${item.name }</p>
-												<%-- 	<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
+													<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
  										 <span
-											class="card-price-discount"> -50% </span> --%>
+											class="card-price-discount"> <c:out value="${item.discountEntity.percentz }" />%</span> 
 												<p class="card-price-cost">
 													<c:out value="${item.promotionPrice }" />
 													<i> đ</i>
 												</p>
 											</div>
 										</div>
-								</a></li>
+								</a>
+								</li>
 							</c:forEach>
 						</c:when>
 						<c:otherwise>
@@ -1610,16 +395,17 @@
 												<p class="card-des truncate"
 													href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
 													${item.name }</p>
-												<%-- 	<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
+													<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
  										 <span
-											class="card-price-discount"> -50% </span> --%>
+											class="card-price-discount"> <c:out value="${item.discountEntity.percentz }" />%</span> 
 												<p class="card-price-cost">
 													<c:out value="${item.promotionPrice }" />
 													<i> đ</i>
 												</p>
 											</div>
 										</div>
-								</a></li>
+								</a>
+								</li>
 							</c:forEach>
 						</c:when>
 						<c:otherwise>
@@ -1678,16 +464,17 @@
 												<p class="card-des truncate"
 													href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
 													${item.name }</p>
-												<%-- 	<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
+													<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
  										 <span
-											class="card-price-discount"> -50% </span> --%>
+											class="card-price-discount"> <c:out value="${item.discountEntity.percentz }" />%</span> 
 												<p class="card-price-cost">
 													<c:out value="${item.promotionPrice }" />
 													<i> đ</i>
 												</p>
 											</div>
 										</div>
-								</a></li>
+								</a>
+								</li>
 							</c:forEach>
 						</c:when>
 						<c:otherwise>
@@ -1698,9 +485,7 @@
 						</c:otherwise>
 					</c:choose>
 				</ul>
-				<button class="button primary">
-					<span>Xem thêm</span>
-				</button>
+				
 			</section>
 		</div>
 		<!-- end Content -->
@@ -1714,31 +499,31 @@
 					<ul class="block_list">
 						<li class="block_item logo">
 						<a href="/"><img
-								src="${pageContext.request.contextPath}/imgs/logo-white.png"
+								src="${pageContext.request.contextPath}/imgs/logo.png"
 								alt="logo-white" /></a></li>
 						<li class="block_item"><a class="block_link"
 							href="tel:0906.880.960" title="Hotline: 0906.880.960">Hotline:
-								0906.880.960</a></li>
+								0933.932.517</a></li>
 						<li class="block_item"><a class="block_link" href="/"
 							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
 						</li>
 						<li class="block_item"><a class="block_link"
 							href="email:customer@dosiinvn.com"
 							title="Email: customer@dosiinvn.com">Email:
-								customer@dosiinvn.com</a></li>
+							Trongldde140257@fpt.edu.vn</a></li>
 					</ul>
 					<h5 class="block_heading">Kết nối với chúng tôi</h5>
 					<ul class="block-app-list">
 						<li class="block-app-item"><a
-							href="https://www.instagram.com/dosiin.magz/" title="Instagram"><i
+							href="https://www.instagram.com/" title="Instagram"><i
 								class="fab fa-instagram-square"></i></a></li>
 						<li class="block-app-item"><a class="dosiin_d-block"
-							href="https://www.facebook.com/dosiinvietnam/" title="Facebook"><i
+							href="https://www.facebook.com/daihocfptdanang" title="Facebook"><i
 								class="fab fa-facebook"></i></a></li>
 					</ul>
 				</div>
 				<div class="block_wrapper">
-					<h5 class="block_heading">Về Dosiin</h5>
+					<h5 class="block_heading">Về FEC</h5>
 
 					<ul class="block_list">
 						<li class="block_item"><a class="block_link" href="#">Các
@@ -1790,7 +575,8 @@
 										</div>
 										<div class="card-item_text">Tiền mặt</div>
 									</div>
-								</a><a class="block_link" href="/" title="Momo">
+								</a>
+								<%-- <a class="block_link" href="/" title="Momo">
 									<div class="card-item_box">
 										<div class="card-item_icon">
 											<img
@@ -1799,11 +585,11 @@
 										</div>
 										<div class="card-item_text">Momo</div>
 									</div>
-								</a>
+								</a> --%>
 							</div>
 						</li>
 						
-						<li class="block_card-item">
+						<%-- <li class="block_card-item">
 							<div class="card-item_list">
 								<a class="block_link" href="/" title="Internet Banking">
 									<div class="card-item_box">
@@ -1816,7 +602,7 @@
 									</div>
 								</a>
 							</div>
-						</li>
+						</li> --%>
 					</ul>
 				</div>
 			</div>

@@ -253,13 +253,19 @@ header a {
 }
 
 @media screen and (max-width: 600px) {
-	.header-bottom-left{
+	.header-bottom-logo{
 	display: none;
 	}
-	
+	  .header-bottom{
+	display: flex;
+	justify-content: space-around;
+	}
+	.nav{
+	z-index: 500;
+	}
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 490px) {
 	.header-bottom-item-text
 	{
 		display: none;
@@ -273,4 +279,8 @@ header a {
 	 	gap: 0 10px;
 	 }
 	
+  .header-bottom-center input {
+     border-radius: 5px;
+     margin: 0 !important;
+  }
 }

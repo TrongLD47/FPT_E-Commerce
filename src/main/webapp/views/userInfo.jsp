@@ -147,7 +147,7 @@
 	<!-- end Header -->
 
 	<!-- ----------------- Begin MAIN: SETTING ---------------------- -->
-	<div class="mid-container">
+	<div class="mid-container" style="margin-top: 20px;">
 		<div class="setting">
 			<div class="setting__left">
 				<nav class="sidebar" id="sidebar">

@@ -91,11 +91,13 @@
 				<div class="header-bottom">
 					<!-- Header-left -->
 					<ul class="header-bottom-left">
-						<li class="header-bottom-logo"><a href="${pageContext.request.contextPath}/home"> <img
+						<li class="header-bottom-logo"><a
+							href="${pageContext.request.contextPath}/home"> <img
 								src="./imgs/logo.png" alt="logo" />
 						</a></li>
 						<li class="header-bottom-item"><a href="#"> <span
-								class="header-bottom-item-text text-hover active">FPT E-Commerce</span>
+								class="header-bottom-item-text text-hover active">FPT
+									E-Commerce</span>
 						</a></li>
 						<li class="header-bottom-item"><a href="#"> <span
 								class="header-bottom-item-text text-hover"></span>
@@ -119,9 +121,10 @@
 						</li>
 						<li class="header-bottom-right-items">
 							<div class="header-bottom-right-item">
-								<a href="${pageContext.request.contextPath}/cart" >
-								<i class="fas fa-shopping-bag"><span class="badge" id="quantity-product-in-cart"></span></i>
-							</a>
+								<a href="${pageContext.request.contextPath}/cart"> <i
+									class="fas fa-shopping-bag "><span class="badge"
+										id="quantity-product-in-cart"></span></i>
+								</a>
 							</div>
 						</li>
 						<li class="header-bottom-right-items user action ">
@@ -162,7 +165,7 @@
 
 					<!-- end Header-right -->
 				</div>
-				
+
 				<!-- end Header - bottom -->
 			</div>
 		</header>
@@ -238,24 +241,28 @@
 												<img src="${item.pathImage }" alt="" />
 											</div>
 											<div class="card-text">
-												<a href="${pageContext.request.contextPath}/shop-detail?id=${item.shopEntity.id}"><h3 class="card-title">
-													<c:out value="${item.shopEntity.name }" />
-												</h3></a>
+												<a
+													href="${pageContext.request.contextPath}/shop-detail?id=${item.shopEntity.id}"><h3
+														class="card-title">
+														<c:out value="${item.shopEntity.name }" />
+													</h3></a>
 												<%--<p class="card-des truncate">${item.description }</p> --%>
-												<p class="card-des truncate"
-													href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
-													${item.name }</p>
-													<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
- 										 <span
-											class="card-price-discount"> <c:out value="${item.discountEntity.percentz }" />%</span> 
-												<p class="card-price-cost">
-													<c:out value="${item.promotionPrice }" />
-													<i> đ</i>
-												</p>
+												<a href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
+													<p class="card-des truncate">
+														${item.name }</p> <span class="card-price"> <c:out
+															value="${item.unitPrice }" />
+												</span> <span class="card-price-discount"> <c:out
+															value="${item.discountEntity.percentz }" />%
+												</span>
+													<p class="card-price-cost">
+														<c:out value="${item.promotionPrice }" />
+														<i> đ</i>
+													</p>
+												</a>
+
 											</div>
 										</div>
-								</a>
-								</li>
+								</a></li>
 							</c:forEach>
 						</c:when>
 						<c:otherwise>
@@ -388,24 +395,27 @@
 												<img src="${item.pathImage }" alt="" />
 											</div>
 											<div class="card-text">
-												<a href="${pageContext.request.contextPath}/shop-detail?id=${item.shopEntity.id}"><h3 class="card-title">
-													<c:out value="${item.shopEntity.name }" />
-												</h3></a>
+												<a
+													href="${pageContext.request.contextPath}/shop-detail?id=${item.shopEntity.id}"><h3
+														class="card-title">
+														<c:out value="${item.shopEntity.name }" />
+													</h3></a>
 												<%--<p class="card-des truncate">${item.description }</p> --%>
-												<p class="card-des truncate"
-													href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
-													${item.name }</p>
-													<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
- 										 <span
-											class="card-price-discount"> <c:out value="${item.discountEntity.percentz }" />%</span> 
-												<p class="card-price-cost">
-													<c:out value="${item.promotionPrice }" />
-													<i> đ</i>
-												</p>
+												<a href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
+													<p class="card-des truncate">
+														${item.name }</p> <span class="card-price"> <c:out
+															value="${item.unitPrice }" />
+												</span> <span class="card-price-discount"> <c:out
+															value="${item.discountEntity.percentz }" />%
+												</span>
+													<p class="card-price-cost">
+														<c:out value="${item.promotionPrice }" />
+														<i> đ</i>
+													</p>
+												</a>
 											</div>
 										</div>
-								</a>
-								</li>
+								</a></li>
 							</c:forEach>
 						</c:when>
 						<c:otherwise>
@@ -457,24 +467,27 @@
 												<img src="${item.pathImage }" alt="" />
 											</div>
 											<div class="card-text">
-												<a href="${pageContext.request.contextPath}/shop-detail?id=${item.shopEntity.id}"><h3 class="card-title">
-													<c:out value="${item.shopEntity.name }" />
-												</h3></a>
+												<a
+													href="${pageContext.request.contextPath}/shop-detail?id=${item.shopEntity.id}"><h3
+														class="card-title">
+														<c:out value="${item.shopEntity.name }" />
+													</h3></a>
 												<%--<p class="card-des truncate">${item.description }</p> --%>
-												<p class="card-des truncate"
-													href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
-													${item.name }</p>
-													<span class="card-price"> <c:out value="${item.unitPrice }" /> </span> 
- 										 <span
-											class="card-price-discount"> <c:out value="${item.discountEntity.percentz }" />%</span> 
-												<p class="card-price-cost">
-													<c:out value="${item.promotionPrice }" />
-													<i> đ</i>
-												</p>
+												<a href="${pageContext.request.contextPath}/detailProduct?id=${item.id}">
+													<p class="card-des truncate">
+														${item.name }</p> <span class="card-price"> <c:out
+															value="${item.unitPrice }" />
+												</span> <span class="card-price-discount"> <c:out
+															value="${item.discountEntity.percentz }" />%
+												</span>
+													<p class="card-price-cost">
+														<c:out value="${item.promotionPrice }" />
+														<i> đ</i>
+													</p>
+												</a>
 											</div>
 										</div>
-								</a>
-								</li>
+								</a></li>
 							</c:forEach>
 						</c:when>
 						<c:otherwise>
@@ -485,7 +498,7 @@
 						</c:otherwise>
 					</c:choose>
 				</ul>
-				
+
 			</section>
 		</div>
 		<!-- end Content -->
@@ -497,8 +510,7 @@
 			<div class="footer_top-item">
 				<div class="block_wrapper">
 					<ul class="block_list">
-						<li class="block_item logo">
-						<a href="/"><img
+						<li class="block_item logo"><a href="/"><img
 								src="${pageContext.request.contextPath}/imgs/logo.png"
 								alt="logo-white" /></a></li>
 						<li class="block_item"><a class="block_link"
@@ -510,7 +522,7 @@
 						<li class="block_item"><a class="block_link"
 							href="email:customer@dosiinvn.com"
 							title="Email: customer@dosiinvn.com">Email:
-							Trongldde140257@fpt.edu.vn</a></li>
+								Trongldde140257@fpt.edu.vn</a></li>
 					</ul>
 					<h5 class="block_heading">Kết nối với chúng tôi</h5>
 					<ul class="block-app-list">
@@ -588,7 +600,7 @@
 								</a> --%>
 							</div>
 						</li>
-						
+
 						<%-- <li class="block_card-item">
 							<div class="card-item_list">
 								<a class="block_link" href="/" title="Internet Banking">

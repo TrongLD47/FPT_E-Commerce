@@ -255,8 +255,8 @@
 											<th>MÃ SẢN PHẨM</th>
 											<th>DANH MỤC PHỤ</th>
 											<th>GIÁ</th>
-											<th>SỐ LƯỢNG</th>
-											<th>SIZE</th>
+										<!-- 	<th>SỐ LƯỢNG</th> -->
+											<!-- <th>SIZE</th> -->
 											<th>KHUYẾN MÃI</th>
 											<th>GIÁ KHUYẾN MÃI</th>
 											<th>THAO TÁC</th>
@@ -274,8 +274,8 @@
 														<td><c:out value="${item.code }"></c:out></td>
 														<td><c:out value="${item.subCategoryEntity.nameSub }"></c:out></td>
 														<td><c:out value="${item.unitPrice }  vnđ"></c:out></td>
-														<td><c:out value="${item.quantity }"></c:out></td>
-														<td><c:out value="${item.productDetailsEntity.size }"></c:out></td>
+											<%-- 			<td><c:out value="${item.quantity }"></c:out></td> --%>
+														<%-- <td><c:out value="${item.productDetailsEntity.size }"></c:out></td> --%>
 														<td><c:out value="${item.discountEntity.percentz }%"></c:out></td>
 														<td><c:out value="${item.promotionPrice }"></c:out></td>
 														<td>

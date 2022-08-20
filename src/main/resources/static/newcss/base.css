@@ -2184,7 +2184,7 @@ button.swiper-pagination-bullet {
   	width: 100%;
   }
   .header-bottom-center input{
-  	width: 90%;
+  	width: 90% !important;
   }
   .about-user{
   	display: none;
@@ -2201,6 +2201,18 @@ button.swiper-pagination-bullet {
 	
 }
 
+@media (max-width: 490px) {
+  .header-bottom{
+	display: flex;
+	justify-content: flex-end;
+	}
+	
+  .header-bottom-center input {
+     border-radius: 5px;
+     margin: 0 !important;
+  }
+}
+
 @media screen and (max-width: 450px) {
 	.header-bottom-item-text
 	{
@@ -2214,5 +2226,4 @@ button.swiper-pagination-bullet {
 	 .header-bottom-right{
 	 	gap: 0 10px;
 	 }
-	
 }

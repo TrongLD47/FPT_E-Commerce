@@ -64,17 +64,21 @@ var Product = {
                 $('.key-word').text($('#key-word').val());
                 $('.quantity-result-p').text('('+ result.length + ' kết quả)');
                 $.each(result, function (index, value) {
-                    var product = "<li class='col c-6 m-4 l-2-4 py-1' id='" + value.id + "'><a href='#'>" +
+                    var product = "<li class='col c-6 m-4 l-2-4 py-1' id='" + value.id + "'>" +
+                    	"<a href='detailProduct?id="+ value.id+"'>" +
+                    	
                         "<div class='card'>" +
                         "<div class='card-img'>" +
                         "<img src="+value.pathImage+"/>"+
                         "</div>" +
                         "<div class='card-text'>" +
-                        "<h3 class='card-title text-hover name-shop'>" + value.nameShop + "</h3>" +
+                        "<a href='shop-detail?id="+value.idShop+"'>" +
+                        "<h3 class='card-title text-hover name-shop'>" + value.nameShop + "</h3>"+
+                        "</a>" +
                         "<p class='card-des truncate name-product'>" + value.name + "</p>" +
                         "<span class='card-price unit-price'>" + value.unitPrice + "</span>" +
-                        "<span class='card-price-discount promotion-price'><i>-</i>"+value.promotionPrice+"<i>%</i></span>"+
-                        "<p class='card-price-cost promotion-price'>" + value.promotionPrice + "</p>" +
+                        "<span class='card-price-discount promotion-price'><i>-</i>"+value.percentz+"<i>%</i></span>"+
+                        "<p class='card-price-cost promotion-price'>" + value.promotionPrice +" <i>Vnđ</i></p>" +
                         "</div>" +
                         "</div>" +
                         "</a></li>";

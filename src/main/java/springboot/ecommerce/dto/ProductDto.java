@@ -35,6 +35,10 @@ public class ProductDto{
 	
 	private String nameShop;
 	
+	private Integer percentz;
+	
+	private int idShop;
+	
 	public ProductDto() {}
 	
 	public ProductDto(ProductEntity entity, ShopEntity s) {
@@ -47,6 +51,8 @@ public class ProductDto{
 			this.unitPrice = entity.getUnitPrice();
 			this.promotionPrice = entity.getPromotionPrice();
 			this.nameShop = s.getName();
+			this.percentz = entity.getDiscountEntity().getPercentz();
+			this.idShop = s.getId();
 		}
 	}
 }

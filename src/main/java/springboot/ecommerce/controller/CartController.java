@@ -83,7 +83,7 @@ public class CartController {
             productInCart.setShopUrl(productEntity.getShopEntity().getShopUrl());
             productInCart.setPathImage(productEntity.getPathImage());
             productInCart.setSize(productEntity.getProductDetailsEntity().getSize());
-            productInCart.setSize(productEntity.getProductDetailsEntity().getColor());
+            productInCart.setColor(productEntity.getProductDetailsEntity().getColor());
             productInCart.setUnitPrice(productEntity.getUnitPrice());
             productInCart.setPromotionPrice(productEntity.getPromotionPrice());
             productInCart.setPercentz(productEntity.getDiscountEntity().getPercentz());

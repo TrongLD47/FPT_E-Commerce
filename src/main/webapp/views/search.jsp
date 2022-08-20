@@ -9,7 +9,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>FPT E-Commerce</title>
+<title>Search</title>
 
 <!-- require -->
 <link href="http://fonts.cdnfonts.com/css/sf-pro-display"
@@ -90,7 +90,7 @@
 				<ul class="header-bottom-left">
 					<li class="header-bottom-logo"><a
 						href="${pageContext.request.contextPath}/home"> <img
-							src="../assets/img/product/logo.svg" alt="logo" />
+							src="./imgs/logo.png" alt="logo" />
 					</a></li>
 					<li class="header-bottom-item"><a href="#"> <span
 							class="header-bottom-item-text text-hover active">FPT E-Commerce</span>
@@ -176,7 +176,7 @@
 	<!-- end Header -->
 
 	<!-- ----------------- Begin MAIN---------------------- -->
-	<main class="search" style="padding-top:40px;">
+	<main class="search">
 		<div class="page-section brand-store__wrapper">
 			<div class="brand-store">
 				<div class="brand-store__left">
@@ -265,7 +265,7 @@
 												<div class="input--radio__wrapper">
 													<input name="category" id="6" type="checkbox" value="6"
 														onclick="Product.searchProduct()" /><label
-														class="text-hover" for="6">Áo Denim / Jean</label>
+														class="text-hover" for="6">Váy / Đầm</label>
 												</div>
 											</a>
 										</div>
@@ -276,7 +276,7 @@
 												<div class="input--radio__wrapper">
 													<input name="category" id="7" type="checkbox" value="7"
 														onclick="Product.searchProduct()" /><label
-														class="text-hover" for="7">Sơ Mi Tay Dài</label>
+														class="text-hover" for="7">Đồ bộ</label>
 												</div>
 											</a>
 										</div>
@@ -287,7 +287,7 @@
 												<div class="input--radio__wrapper">
 													<input name="category" id="8" type="checkbox" value="8"
 														onclick="Product.searchProduct()" /><label
-														class="text-hover" for="8">Sơ Mi Tay Ngắn</label>
+														class="text-hover" for="8">Đồ Lót</label>
 												</div>
 											</a>
 										</div>
@@ -298,7 +298,7 @@
 												<div class="input--radio__wrapper">
 													<input name="category" id="9" type="checkbox" value="9"
 														onclick="Product.searchProduct()" /><label
-														class="text-hover" for="9">Áo Len / Cardigan</label>
+														class="text-hover" for="9">Nước Hoa</label>
 												</div>
 											</a>
 										</div>

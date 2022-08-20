@@ -352,7 +352,7 @@
 							<div class="card mb-4 ">
 								<form:form action="doUpdateCategory" id="form-addCate"
 									method="post" modelAttribute="category">
-									<h4 class="card-header">Update Category</h4>
+									<h4 class="card-header">Chỉnh sửa danh mục</h4>
 									<div class="card-body ">
 										<div class="add-Name-Code">
 											<c:if test="${message != null }">
@@ -360,26 +360,28 @@
 											</c:if>
 											<div class="mb-3">
 												<form:hidden path="id" readonly="true" />
-												<label for="defaultInput" class="form-label">Name
-													Category</label>
+												<label for="defaultInput" class="form-label">Tên
+													Danh Mục</label>
 												<form:input path="name" id="defaultInput"
 													cssClass="form-control" type="text"
 													placeholder="Name Here..." />
+													<span  style="color: red" id="addcate_error"></span>
 											</div>
 											<div class="mb-3">
-												<label for="defaultInput" class="form-label">Code
-													Category</label>
+												<label for="defaultInput" class="form-label">Mã
+													Danh Mục</label>
 												<form:input path="code" id="defaultInput1"
 													class="form-control" type="text" placeholder="Code Here..." />
+													<span  style="color: red" id="addcode_error"></span>
 											</div>
 										</div>
 										<div class="btn btnArond">
 											<a onclick="clearForm()">
-												<button type="button" class="btn btn-warning">Clear</button>
+												<button type="button" class="btn btn-warning">Xóa</button>
 											</a> <a href="#">
-												<button type="submit" class="btn btn-primary">Submit</button>
+												<button type="submit" class="btn btn-primary">Xác nhận</button>
 											</a> <a href="./CategoryList.Html">
-												<button type="button" class="btn btn-danger">Cancel</button>
+												<button type="button" class="btn btn-danger">Hủy</button>
 											</a>
 										</div>
 
@@ -466,6 +468,48 @@
 	<script src="${pageContext.request.contextPath}/js1/nicesellect.js"></script>
 	<!-- Active JS -->
 	<script src="${pageContext.request.contextPath}/js1/active.js"></script>
+	
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+			{
+			    $('#form-addCate').submit(function(){
+			 
+			     
+			        var defaultInput   = $.trim($('#defaultInput').val());
+			        var defaultInput1   = $.trim($('#defaultInput1').val());
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        // category
+			        if (defaultInput == '' ){
+			            $('#addcate_error').text('Vui lòng nhập tên danh mục !');
+			            flag = false;
+			        }
+			        else{
+			            $('#addcate_error').text('');
+			        }
+			        // codecategory
+			        if (defaultInput1 == '' ){
+			            $('#addcode_error').text('Vui lòng nhập  mã danh mục !');
+			            flag = false;
+			        }
+			        else{
+			            $('#addcode_error').text('');
+			        }
+			 
+
+			 
+			        return flag;
+			    });
+			});
+    </script>
 
 
 

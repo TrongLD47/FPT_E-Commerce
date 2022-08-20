@@ -360,6 +360,7 @@
 														<form:option value="${item.id }">${item.name }</form:option>
 													</c:forEach>
 												</form:select>
+												 <span   style="color: red" id="choosecate_error"></span>
 											</div>
 											<div class="mb-3">
 												<form:hidden path="id" readonly="true" />
@@ -368,6 +369,7 @@
 												<form:input path="nameSub" id="nameSub"
 													cssClass="form-control" type="text"
 													placeholder="Name Here..." />
+													<span  style="color: red" id="addsubcate_error"></span>
 											</div>
 											<div class="mb-3">
 												<label for="defaultInput" class="form-label">Code
@@ -375,15 +377,16 @@
 												<form:input path="codeSub" id="codeSub"
 													cssClass="form-control" type="text"
 													placeholder="Code Here..." />
+													<span  style="color: red" id="addcodesubcate_error"></span>
 											</div>
 										</div>
 										<div class="btn btnArond">
 											<a onclick="clearForm()">
-												<button type="button" class="btn btn-warning">Clear</button>
+												<button type="button" class="btn btn-warning">Xóa</button>
 											</a> <a href="#">
-												<button type="submit" class="btn btn-primary">Submit</button>
+												<button type="submit" class="btn btn-primary">Xác Nhận</button>
 											</a> <a href="./CategoryList.Html">
-												<button type="button" class="btn btn-danger">Cancel</button>
+												<button type="button" class="btn btn-danger">Hủy</button>
 											</a>
 										</div>
 
@@ -466,6 +469,61 @@
 			document.getElementById("form-addCate").reset();
 		}
 	</script>
+	
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+			{
+			    $('#form-addCate').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var nameSub   = $.trim($('#nameSub').val());
+			        var codesub   = $.trim($('#codesub').val());
+			        var inputGroupSelect01  = $.trim($('#inputGroupSelect01').val());
+				     
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        
+			        if (inputGroupSelect01 == '' ){
+			            $('#choosecate_error').text('Vui lòng chọn danh mục !');
+			            flag = false;
+			        }
+			        else{
+			            $('#choosecate_error').text('');
+			        }
+			        // subcategory
+			        if (nameSub == '' ){
+			            $('#addsubcate_error').text('Vui lòng nhập tên danh mục phụ !');
+			            flag = false;
+			        }
+			        else{
+			            $('#addsubcate_error').text('');
+			        }
+			        // codesubcategory
+			        if (codesub == '' ){
+			            $('#addcodesubcate_error').text('Vui lòng nhập  mã danh mục phụ !');
+			            flag = false;
+			        }
+			        else{
+			            $('#addcodesubcate_error').text('');
+			        }
+			 
+			 
+			    
+			 
+			     
+			 
+			        return flag;
+			    });
+			});
+    </script>
 
 </body>
 </html>

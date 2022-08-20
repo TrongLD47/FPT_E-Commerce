@@ -280,7 +280,7 @@
 							tài khoản</div>
 						<div class="divider"></div>
 						<div class="user-info-form">
-							<form class="form" autocomplete="no-thanks">
+							<form class="form" autocomplete="no-thanks" id="shopinfo">
 								<div class="form__wrapper">
 									<div class="form__left">
 										<div class="err">
@@ -292,23 +292,28 @@
 
 										<div class="form-group">
 											<label>Tên Shop</label> <input type="text" class="form-input"
-												placeholder="Tên Shop của bạn" autocomplete="off" required />
+												placeholder="Tên Shop của bạn" autocomplete="off"  id="shopname"/>
 										</div>
+										<span  style="color: red; padding-left:110px" id="shopname_error"></span>
 										<div class="form-group">
 											<label>Số điện thoại</label> <input type="tel"
 												class="form-input" placeholder="Số điện thoại"
-												autocomplete="off" required pattern="^0[0-9]{8}$" />
+												autocomplete="off"  id="sdtshop"/>
 										</div>
+											<span  style="color: red; padding-left:110px" id="sdtshop_error"></span>
 										<div class="form-group">
 											<label>Địa chỉ</label> <input type="text" class="form-input"
-												placeholder="Địa chỉ" autocomplete="off" required value="" />
+												placeholder="Địa chỉ" autocomplete="off"value="" id="addressshop" />
 										</div>
+										<span  style="color: red; padding-left:110px" id="addressshop_error"></span>
+										
 										<div class="form-group">
 											<label>Mô tả shop</label>
 
 											<textarea class="form-input" placeholder="mô tả"
-												autocomplete="off" required value=""></textarea>
+												autocomplete="off" value="" id="shopdesc"></textarea>
 										</div>
+											<span  style="color: red; padding-left:110px" id="shopdesc_error"></span>
 
 
 										<div class="form-button">
@@ -494,5 +499,68 @@
 			DaNang</div>
 	</footer>
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
+	
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+			{
+			    $('#shopinfo').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var shopname   = $.trim($('#shopname').val());
+			        var sdtshop   = $.trim($('#sdtshop').val());
+			        var addressshop = $.trim($('#addressshop').val());
+			        var shopdesc = $.trim($('#shopdesc').val());
+			      
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        
+			        if (shopname == '' ){
+			            $('#shopname_error').text('Vui lòng nhập tên cửa hàng !');
+			            flag = false;
+			        }
+			        else{
+			            $('#shopname_error').text('');
+			        }
+			        // subcategory
+			        if (sdtshop == '' ){
+			            $('#sdtshop_error').text('Vui lòng nhập số điện thoại cửa hàng !');
+			            flag = false;
+			        }
+			        else{
+			            $('#sdtshop_error').text('');
+			        }
+			        // codesubcategory
+			        if (addressshop == '' ){
+			            $('#addressshop_error').text('Vui lòng nhập  đia chỉ cửa hàng !');
+			            flag = false;
+			        }
+			        else{
+			            $('#addressshop_error').text('');
+			        }
+			        if (shopdesc == '' ){
+			            $('#shopdesc_error').text('Vui lòng nhập  mô tả cửa hàng !');
+			            flag = false;
+			        }
+			        else{
+			            $('#shopdesc_error').text('');
+			        }
+			 
+			 
+			    
+			 
+			     
+			 
+			        return flag;
+			    });
+			});
+    </script>
 </body>
 </html>

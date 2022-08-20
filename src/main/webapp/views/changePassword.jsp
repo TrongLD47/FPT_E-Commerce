@@ -225,7 +225,7 @@
 							<c:if test="${message != null }">
 								<span class="error"><c:out value="${message }"></c:out></span>
 							</c:if>
-							<form:form action="doUpdatePassword" method="post"
+							<form:form action="doUpdatePassword" method="post" id="form-changepass"
 								cssClass="form" autocomplete="off" modelAttribute="user">
 								<div class="err">
 									<!-- err show -> Add show to the err if you want it to display -->
@@ -236,11 +236,12 @@
 								<!-- pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" -> Mật khẩu gồm ít nhất 6 ký tự, ít nhất 1 chữ, 1 số -->
 								<div class="form-group password">
 									<label>Mật khẩu cũ</label> <input type="password"
-										class="form-input" required autocomplete="off"
-										name="passwordOld" placeholder="Nhập mật khẩu cũ" /> <i
+										class="form-input"  autocomplete="off"
+										name="passwordOld" placeholder="Nhập mật khẩu cũ" id="oldpass" /> <i
 										class="fas fa-eye"></i>
 									<!-- <i class="fas fa-eye-slash"></i> -->
 								</div>
+								<span  style="color: red; padding-left:190px" id="oldpass_error"></span>
 								<form:hidden path="id" readonly="true" />
 								<form:hidden path="username" readonly="true" />
 								<form:hidden path="email" readonly="true" />
@@ -253,17 +254,19 @@
 								<form:input path="confirmPassword" readonly="true" /> --%>
 								<div class="form-group password">
 									<label>Mật khẩu mới</label> <input type="password"
-										class="form-input" required name="password" autocomplete="off"
-										placeholder="Nhập mật khẩu mới" /> <i class="fas fa-eye"></i>
+										class="form-input"  name="password" autocomplete="off"
+										placeholder="Nhập mật khẩu mới"  id="newpass"/> <i class="fas fa-eye"></i>
 
 
 								</div>
+								<span  style="color: red; padding-left:190px" id="newpass_error"></span>
 								<div class="form-group password">
 									<label>Xác nhận mật khẩu</label> <input type="password"
-										class="form-input" required name="confirmPassword"
-										autocomplete="off" placeholder="Xác nhận mật khẩu" /> <i
+										class="form-input"  name="confirmPassword"
+										autocomplete="off" placeholder="Xác nhận mật khẩu" id="newpass2" /> <i
 										class="fas fa-eye"></i>
 								</div>
+								<span  style="color: red; padding-left:190px" id="newpass2_error"></span>
 								<div class="form-button">
 									<button type="submit" class="btn btn-primary">
 										<span>Xác nhận</span>
@@ -515,5 +518,60 @@
 	<!-- ----------------- End FOOTER---------------------- -->
 	<script src="${pageContext.request.contextPath}/js/togglePassword.js"></script>
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
+	
+		<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+			{
+			    $('#form-changepass').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var oldpass   = $.trim($('#oldpass').val());
+			        var newpass   = $.trim($('#newpass').val());
+			        var newpass2 = $.trim($('#newpass2').val());
+				     
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        
+			        if (oldpass == '' ){
+			            $('#oldpass_error').text('Vui lòng nhập mật khẩu cũ !');
+			            flag = false;
+			        }
+			        else{
+			            $('#oldpass_error').text('');
+			        }
+			        // subcategory
+			        if (newpass == '' ){
+			            $('#newpass_error').text('Vui lòng nhập mật khẩu mới !');
+			            flag = false;
+			        }
+			        else{
+			            $('#newpass_error').text('');
+			        }
+			        // codesubcategory
+			        if (newpass2 == '' ){
+			            $('#newpass2_error').text('Vui lòng nhập lại mật khẩu mới !');
+			            flag = false;
+			        }
+			        else{
+			            $('#newpass2_error').text('');
+			        }
+			 
+			 
+			    
+			 
+			     
+			 
+			        return flag;
+			    });
+			});
+    </script>
 </body>
 </html>

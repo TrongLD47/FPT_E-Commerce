@@ -200,7 +200,7 @@
 							<form:form class="form" autocomplete="no-thanks"
 								enctype="multipart/form-data"
 								action="${pageContext.request.contextPath}/customer/doUpdateProfile"
-								modelAttribute="user" method="post">
+								modelAttribute="user" method="post" id="form-userinfo">
 								<div class="form__wrapper">
 									<div class="form__left">
 										<div class="err">
@@ -216,18 +216,22 @@
 										<div class="form-group">
 											<label>Tên</label>
 											<form:input type="text" cssClass="form-input"
-												placeholder="Tên của bạn" path="username" />
+												placeholder="Tên của bạn" path="username" id="username"/>
+												
 										</div>
+										
 										<div class="form-group">
 											<label>Số điện thoại</label>
 											<form:input type="tel" cssClass="form-input"
-												placeholder="Số điện thoại" path="phoneNumber" />
+												placeholder="Số điện thoại" path="phoneNumber"  id="phonenumber"/>
 										</div>
+										<span  style="color: red; padding-left:130px" id="phonenumber_error"></span>
 										<div class="form-group">
 											<label>Địa chỉ</label>
 											<form:input type="text" cssClass="form-input"
-												placeholder="Tên shop" path="address" />
+												placeholder="Địa chỉ" path="address" id="useraddress"/>
 										</div>
+										<span  style="color: red; padding-left:130px" id="useraddress_error"></span>
 										<div class="form-group group__gender">
 											<label for="gender">Giới tính</label>
 											<div class="gender__item-list">
@@ -248,7 +252,9 @@
 											<form:input id="birth" name="birth" type="date"
 												cssClass="form-input" placeholder="Chọn ngày sinh của bạn"
 												path="birthDay" />
+											
 										</div>
+											<span  style="color: red; padding-left:130px" id="birth_error"></span>
 										<div class="form-button">
 											<button type="submit" class="btn btn-primary">
 												<span>Xác nhận</span>
@@ -402,5 +408,60 @@
 			DaNang</div>
 	</footer>
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
+	
+		<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+			{
+			    $('#form-userinfo').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var useraddress   = $.trim($('#useraddress').val());
+			        var phonenumber   = $.trim($('#phonenumber').val());
+			        var birth = $.trim($('#birth').val());
+				     
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        
+			        if (useraddress == '' ){
+			            $('#useraddress_error').text('Vui lòng nhập địa chỉ !');
+			            flag = false;
+			        }
+			        else{
+			            $('#useraddress_error').text('');
+			        }
+			        // subcategory
+			        if (phonenumber == '' ){
+			            $('#phonenumber_error').text('Vui lòng nhập số điện thoại !');
+			            flag = false;
+			        }
+			        else{
+			            $('#phonenumber_error').text('');
+			        }
+			        // codesubcategory
+			        if (birth == '' ){
+			            $('#birth_error').text('Vui lòng nhập  ngày sinh !');
+			            flag = false;
+			        }
+			        else{
+			            $('#birth_error').text('');
+			        }
+			 
+			 
+			    
+			 
+			     
+			 
+			        return flag;
+			    });
+			});
+    </script>
 </body>
 </html>

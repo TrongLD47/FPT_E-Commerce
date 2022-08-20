@@ -237,6 +237,7 @@
 												aria-label="Shirt, t-shirts, etc." path="name" />
 
 										</div>
+										<span  style="color: red" id="productNameLabel_error"></span>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group">
@@ -247,9 +248,10 @@
 											</label>
 
 											<form:input type="text" cssClass="form-control"
-												name="productName" id="productNameLabel" path="code" />
+												name="masp" id="masp" path="code" />
 
 										</div>
+										<span  style="color: red" id="masp_error"></span>
 									</div>
 								</div>
 								<!-- End Form Group -->
@@ -266,6 +268,7 @@
 													path="unitPrice" />
 												<span class="input-group-text">.00</span>
 											</div>
+											<span  style="color: red" id="productPrice_error"></span>
 										</div>
 									</div>
 
@@ -281,6 +284,7 @@
 													<form:option value="2">Female</form:option>
 													<form:option value="3">Other</form:option>
 												</form:select>
+												<span  style="color: red" id="productGender_error"></span>
 											</div>
 										</div>
 									</div>
@@ -295,6 +299,7 @@
 												id="productColor" placeholder="red, blue, green, yellow"
 												path="productDetailsEntity.color" />
 										</div>
+										<span  style="color: red" id="productColor_error"></span>
 										<!-- End Form Group -->
 									</div>
 									<div class="col-sm-6">
@@ -306,6 +311,7 @@
 												id="productBrand" placeholder="Nike, Adidas, Inc"
 												aria-label="eg. 348121032" path="brand" />
 										</div>
+										<span  style="color: red" id="productBrand_error"></span>
 										<!-- End Form Group -->
 									</div>
 								</div>
@@ -321,6 +327,7 @@
 												aria-label="eg. 348121032"
 												path="productDetailsEntity.material" />
 										</div>
+										<span  style="color: red" id="productMaterial_error"></span>
 										<!-- End Form Group -->
 
 									</div>
@@ -329,9 +336,10 @@
 											<label for="productMaterial" class="input-label">Mã
 												Khuyến Mãi</label>
 											<form:input type="text" cssClass="form-control"
-												name="Material" id="productMaterial"
+												name="Material" id="productKm"
 												aria-label="eg. 348121032" path="discountEntity.code" />
 										</div>
+										<span  style="color: red" id="productKm_error"></span>
 									</div>
 								</div>
 
@@ -511,6 +519,7 @@
 											<label for="productDescription" class="input-label">Mô tả sản phẩm</label>
 											<form:textarea id="productDescription" path="description"></form:textarea>
 										</div>
+										<span  style="color: red" id="productDescription_error"></span>
 									</div>
 
 									<div class="row">
@@ -520,7 +529,7 @@
 												<div class="upload__btn-box">
 													<label class="upload__btn">
 														<p>Tải lên ảnh 1</p> <input type="file"
-														name="multipartFile" class="upload__inputfile">
+														name="multipartFile" class="upload__inputfile" id="uploadimg">
 													</label>
 												</div>
 												<div class="upload__img-wrap">
@@ -534,7 +543,7 @@
 												<div class="upload__btn-box">
 													<label class="upload__btn">
 														<p>Tải lên ảnh 2</p> <input type="file"
-														name="multipartFile1" class="upload__inputfile">
+														name="multipartFile1" class="upload__inputfile" id="uploadimg">
 													</label>
 												</div>
 												<div class="upload__img-wrap">
@@ -549,7 +558,7 @@
 												<div class="upload__btn-box">
 													<label class="upload__btn">
 														<p>Tải lên ảnh 3</p> <input type="file"
-														name="multipartFile2" class="upload__inputfile">
+														name="multipartFile2" class="upload__inputfile" id="uploadimg">
 													</label>
 												</div>
 												<div class="upload__img-wrap">
@@ -563,7 +572,7 @@
 												<div class="upload__btn-box">
 													<label class="upload__btn">
 														<p>Tải lên ảnh 4</p> <input type="file"
-														name="multipartFile3" class="upload__inputfile">
+														name="multipartFile3" class="upload__inputfile" id="uploadimg">
 													</label>
 												</div>
 												<div class="upload__img-wrap">
@@ -572,6 +581,7 @@
 												</div>
 											</div>
 										</div>
+										
 
 									</div>
 
@@ -597,6 +607,109 @@
 	<script src="${pageContext.request.contextPath}/newjs/AddProduct.js"></script>
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
 
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+			{
+			    $('#form-addProduct').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var productNameLabel   = $.trim($('#productNameLabel').val());
+			        var masp   = $.trim($('#masp').val());
+			        var productPrice   = $.trim($('#productPrice').val());
+			        var productGender   = $.trim($('#productGender').val());
+			        var productColor  = $.trim($('#productColor').val());
+			        var productBrand  = $.trim($('#productBrand').val());
+			        var productMaterial  = $.trim($('#productMaterial').val());
+			       
+			        var productSubCategory  = $.trim($('#productSubCategory').val());
+			        
+			        var productDescription  = $.trim($('#productDescription').val());
+			        var uploadimg  = $.trim($('#uploadimg').val());
+			
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        
+			        if (productNameLabel == '' ){
+			            $('#productNameLabel_error').text('Vui lòng nhập tên sản phẩm !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productNameLabel_error').text('');
+			        }
+			       
+			        if (masp  == '' ){
+			            $('#masp_error').text('Vui lòng nhập mã sản phẩm !');
+			            flag = false;
+			        }
+			        else{
+			            $('#masp_error').text('');
+			        }
+			        if (productPrice  == '' ){
+			            $('#productPrice_error').text('Vui lòng nhập giá sản phẩm !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productPrice_error').text('');
+			        }
+			        if (productGender  == '' ){
+			            $('#productGender_error').text('Vui lòng chọn giới tính  !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productGender_error').text('');
+			        }
+			        if (productColor  == '' ){
+			            $('#productColor_error').text('Vui lòng nhập màu sắc  !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productColor_error').text('');
+			        }
+			        if (productBrand  == '' ){
+			            $('#productBrand_error').text('Vui lòng nhập thương hiệu  !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productBrand_error').text('');
+			        }
+			        if (productMaterial  == '' ){
+			            $('#productMaterial_error').text('Vui lòng nhập chất liệu !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productMaterial_error').text('');
+			        } 
+			         if (productSubCategory  == '' ){
+			            $('#productSubCategory_error').text('Vui lòng chọn danh mục phụ !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productSubCategory_error').text('');
+			        }
+			        if (productDescription  == '' ){
+			            $('#productDescription_error').text('Vui lòng nhập mô tả sản phẩm !');
+			            flag = false;
+			        }
+			        else{
+			            $('#productDescription_error').text('');
+			        }
+			       
+			        
+			 
+
+
+			        return flag;
+			    });
+			});
+    </script>
 
 </body>
 

@@ -203,12 +203,12 @@
 								<label class="cm-phone cm-required" for="phone">Số điện
 									thoại</label>
 								<form:input id="phone" name="phone" type="number" path="phone" />
-								<div class="error"></div>
+								 <span  style="color: red" id="phone_error"></span>
 							</div>
 							<div class="form-group">
 								<label class="cm-required" for="name">Tên cửa hàng</label>
 								<form:input id="name" name="name" type="text" path="name" />
-								<div class="error"></div>
+								 <span  style="color: red" id="name_error"></span>
 							</div>
 							<button class="btn primary button" type="submit">
 								<span>Gửi</span>
@@ -390,5 +390,51 @@
 		<div class="footer_bot">Copyright 2022 &copy; FPT University
 			DaNang</div>
 	</footer>
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function()
+			{
+			    $('#form-addCate').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var phone   = $.trim($('#phone').val());
+			        var name   = $.trim($('#name').val());
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        // category
+			        if (phone == '' ){
+			            $('#phone_error').text('Vui lòng nhập số điện thoại  !');
+			            flag = false;
+			        }
+			        else{
+			            $('#phone_error').text('');
+			        }
+			        // codecategory
+			        if (name == '' ){
+			            $('#name_error').text('Vui lòng nhập tên cửa hàng !');
+			            flag = false;
+			        }
+			        else{
+			            $('#name_error').text('');
+			        }
+			 
+			 
+			    
+			 
+			     
+			 
+			        return flag;
+			    });
+			});
+      
+    </script>
+    
+	
 
 </html>

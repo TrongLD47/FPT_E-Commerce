@@ -16,22 +16,26 @@
 	<div class="container">
 		<div class="forms-container">
 			<div class="signin">
-				<form:form action="authenticateTheUser" cssClass="sign-in-form"
+				<form:form action="authenticateTheUser" cssClass="sign-in-form" id ="form-login"
 					method="post">
 					<h2 class="title">Đăng nhập</h2>
 					<c:if test="${param.error != null }">
-						<span class="error"> Email/Mật khẩu không hợp lệ </span>
+						<span class="error" style="color:red"> Email/Mật khẩu không hợp lệ </span>
 						<br>
 						<br>
 					</c:if>
 					<div class="input-field">
-						<i class="fas fa-user"></i> <input type="text" placeholder="Email"
-							name="email">
+						<i class="fas fa-user"></i> <input type="text" placeholder="ABCXYZ@gmail.com"
+							name="email" id ="email">
+							
 					</div>
+					 <span  style="color: red" id="email_error"></span>
 					<div class="input-field">
 						<i class="fas fa-lock"></i> <input type="password"
-							placeholder="Password" name="password">
+							placeholder="Mật Khẩu" name="password" id ="password">
+							 
 					</div>
+					<span  style="color: red" id="password_error"></span>
 					<button type="submit" class="btn solid">Đăng nhập</button>
 					<!-- <p class="social-text">Or Sign in with social platforms</p>
 					<div class="social-media">
@@ -67,5 +71,50 @@
 			<script src="${pageContext.request.contextPath}/js/login-regis.js"></script>
 		</div>
 	</div>
+	
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+			{
+			    $('#form-login').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var email   = $.trim($('#email').val());
+			        var password   = $.trim($('#password').val());
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        
+			        if (email == '' ){
+			            $('#email_error').text('Vui lòng nhập lại email !');
+			            flag = false;
+			        }
+			        else{
+			            $('#email_error').text('');
+			        }
+			       
+			        if (password == '' ){
+			            $('#password_error').text('Vui lòng nhập lại mật khẩu!');
+			            flag = false;
+			        }
+			        else{
+			            $('#password_error').text('');
+			        }
+			 
+			 
+			    
+			 
+			     
+			 
+			        return flag;
+			    });
+			});
+    </script>
 </body>
 </html>

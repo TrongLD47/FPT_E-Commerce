@@ -69,7 +69,7 @@
 				<ul class="header-bottom-left">
 				<!-- begin SideBar toggle -->
 					<div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-						<a  onclick="openNav() class="btn btn-default menu-toggle openbtn"><i
+						<a  onclick="openNav()" class="btn btn-default openbtn"><i
 							class="bx bx-menu bx-sm"></i></a>
 					</div>
 					<!-- emd SideBar toggle -->
@@ -137,7 +137,8 @@
 	</header>
 	<!-- end Header -->
 	<!--========== NAV ==========-->
-	<aside class="nav" id="layout-menu" onclick="closeNav()">
+	<aside class="nav" id="layout-menu" >
+	<i class="fa-solid fa-angle-left" onclick="closeNav()"></i>
 		<nav class="nav__container " id="layout-navbar">
 
 			<div class="list-group">

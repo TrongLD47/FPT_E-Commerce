@@ -383,7 +383,7 @@
 											</a> <a href="#">
 												<button type="submit" class="btn btn-primary">Submit</button>
 											</a> <a href="./CategoryList.Html">
-												<button type="button" class="btn btn-danger">Cancel</button>
+												<button type="button" class="btn btn-danger">ƯSSSSSSSSSSSSS</button>
 											</a>
 										</div>
 

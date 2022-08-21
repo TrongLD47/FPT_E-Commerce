@@ -959,7 +959,10 @@
 									<td>${name}</td>
 									<td>${phone}</td>
 									<td>${address}</td>
-									<td><a class="edit-adr" href="">Thay Đổi</a></td>
+									
+								
+									<td><a class="edit-adr" href="${pageContext.request.contextPath}/customer/updateProfile">Thay Đổi</a></td>
+								
 								</tr>
 
 							</tbody>

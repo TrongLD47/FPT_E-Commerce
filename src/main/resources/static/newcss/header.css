@@ -227,6 +227,11 @@ header a {
 }
 
 /* ============= MEDIA =========== */
+@media screen and (max-width:1200px){
+  .nav{
+	z-index: 500;
+	}
+}
 @media screen and (max-width:800px){
   .layout-menu-toggle{
     display: inline;
@@ -260,9 +265,7 @@ header a {
 	display: flex;
 	justify-content: space-around;
 	}
-	.nav{
-	z-index: 500;
-	}
+	
 }
 
 @media (max-width: 490px) {

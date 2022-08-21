@@ -57,16 +57,15 @@
 
 				<!-- Header-left -->
 				<ul class="header-bottom-left">
-					<div
-						class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-						<a href="#menu-toggle" class="btn btn-default menu-toggle"><i
+				<!-- begin SideBar toggle -->
+					<div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+						<a  onclick="openNav()" class="btn btn-default openbtn"><i
 							class="bx bx-menu bx-sm"></i></a>
-
-
 					</div>
+					<!-- emd SideBar toggle -->
 					<li class="header-bottom-logo"><a
 						href="${pageContext.request.contextPath}/home"> <img
-							src="${pageContext.request.contextPath}/newimage/logo.svg"
+							src="${pageContext.request.contextPath}/imgs/logo.png"
 							alt="logo" />
 					</a></li>
 				</ul>
@@ -128,7 +127,8 @@
 	</header>
 	<!-- end Header -->
 	<!--========== NAV ==========-->
-	<aside class="nav" id="layout-menu">
+	<aside class="nav" id="layout-menu" >
+	<i class="fa-solid fa-angle-left" onclick="closeNav()"></i>
 		<nav class="nav__container " id="layout-navbar">
 
 			<div class="list-group">
@@ -138,49 +138,52 @@
 					<div class="nav__list">
 						<div class="nav__items">
 							<!-- <div class="top-nav">
-                                <h3 class="nav__subtitle">Menu</h3>
-                            </div> -->
+                              <h3 class="nav__subtitle">Menu</h3>
+                          </div> -->
 							<!-- <a href="#" class="nav__link active">
-                                <i class='bx bx-home nav__icon'></i>
-                                <span class="nav__name">Home</span>
-                            </a> -->
+                              <i class='bx bx-home nav__icon'></i>
+                              <span class="nav__name">Home</span>
+                          </a> -->
 
 							<div class="nav__dropdown">
-								<a href="#" class="nav__link"> <i
-									class='bx bx-closet nav__icon'></i> <span class="nav__name">Product</span>
+								<a class="nav__link"> <i class='bx bx-closet nav__icon'></i>
+									<span class="nav__name">Quản lý sản phẩm</span>
 
 								</a>
 
 								<div class="nav__dropdown-collapse">
 									<div class="nav__dropdown-content">
-										<a href="/html/ProductList.html" class="nav__dropdown-item">My
-											Products</a> <a href="/html/AddProduct.html"
-											class="nav__dropdown-item">Add New Product</a> <a href="#"
-											class="nav__dropdown-item">Product Banned</a>
+										<a href="${pageContext.request.contextPath}/shop/listProduct"
+											class="nav__dropdown-item">Tất cả sản phẩm</a> <a
+											href="${pageContext.request.contextPath}/shop/addProduct"
+											class="nav__dropdown-item">Thêm sản phẩm</a> 
+											<a href="${pageContext.request.contextPath}/shop/listProductBanned"
+											class="nav__dropdown-item">Sản phẩm vi phạm</a>
 									</div>
 								</div>
 							</div>
 
 							<div class="nav__dropdown">
-								<a href="#" class="nav__link"> <i
-									class='bx bx-task nav__icon'></i> <span class="nav__name">Order</span>
+								<a class="nav__link"> <i class='bx bx-task nav__icon'></i> <span
+									class="nav__name">Quản lý đơn hàng</span>
 
 								</a>
 
 								<div class="nav__dropdown-collapse">
 									<div class="nav__dropdown-content">
-										<a href="/html/OrderList.html" class="nav__dropdown-item">My
-											Orders</a> <a href="/html/OrderCancelList.html"
-											class="nav__dropdown-item">Cancellation</a>
+										<a href="${pageContext.request.contextPath}/shop/listOrder"
+											class="nav__dropdown-item">Tât cả đơn hàng</a> <a
+											href="${pageContext.request.contextPath}/shop/listOrderCancel"
+											class="nav__dropdown-item">Đơn hủy</a>
 									</div>
 								</div>
 							</div>
 
-							<a href="/html/DiscountList.html" class="nav__link"> <i
-								class='bx bxs-discount nav__icon'></i> <span class="nav__name">Discount</span>
-							</a> <a href="#" class="nav__link"> <i
+							<a href="${pageContext.request.contextPath}/shop/listDiscount" class="nav__link"> <i
+								class='bx bxs-discount nav__icon'></i> <span class="nav__name">Khuyến mãi</span>
+							</a><!--  <a href="#" class="nav__link"> <i
 								class=' bx bxs-bar-chart-square nav__icon'></i> <span
-								class="nav__name">Report</span>
+								class="nav__name">Report</span> -->
 							</a>
 						</div>
 					</div>
@@ -199,14 +202,9 @@
 							modelAttribute="discount">
 							<!-- Header -->
 							<div class="card-header">
-								<h4 class="card-header-title">Discount information</h4>
+								<h4 class="card-header-title">Thông tin khuyến mãi</h4>
 							</div>
 							<!-- End Header -->
-
-							<h1>
-								id cua shop la :
-								<c:out value="${sessionScope.idShop }" />
-							</h1>
 							<!-- Body -->
 							<div class="card-body">
 								<div class="row">
@@ -290,13 +288,13 @@
 
 								<div class="btn btnArond">
 									<a onclick="clearForm()">
-										<button type="button" class="btn btn-warning">Clear</button>
+										<button type="button" class="btn btn-warning">Xóa</button>
 									</a> <a href="#">
 										<button type="submit" class="btn button primary">
-											<span> Submit </span>
+											<span> Xác nhận </span>
 										</button>
-									</a> <a href="./DiscountList.html">
-										<button type="button" class="btn btn-danger">Cancel</button>
+									</a> <a href="${pageContext.request.contextPath}/shop/listDiscount">
+										<button type="button" class="btn btn-danger">Đóng</button>
 									</a>
 								</div>
 

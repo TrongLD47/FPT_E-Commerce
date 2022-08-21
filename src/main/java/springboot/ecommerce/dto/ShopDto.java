@@ -30,7 +30,7 @@ public class ShopDto {
         this.address = entity.getAddress();
         this.phone = entity.getPhone();
         this.description = entity.getDescription();
-        this.linkImage = entity.getLinkImage();
+        this.linkImage = entity.getUserEntity().getPath();
         this.status = entity.getStatus();
     }
 }

@@ -165,7 +165,7 @@ public class UserDetailController {
 		user.setRoles(listRole);
 		System.out.println(user.getAddress());
 		userService.saveUser(user);
-		return "redirect:/customer/updatePassword";
+		return "redirect:/customer/updateProfile";
 	}
 	
 	

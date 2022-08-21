@@ -54,13 +54,7 @@
 	href="${pageContext.request.contextPath}/newcss/footer.css" />
 <title>Search</title>
 </head>
-<div class="preloader">
-	<div class="preloader-inner">
-		<div class="preloader-icon">
-			<span></span> <span></span>
-		</div>
-	</div>
-</div>
+
 
 <body>
 	<header class="header-wrapper">

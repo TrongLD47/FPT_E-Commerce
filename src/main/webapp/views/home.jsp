@@ -107,7 +107,10 @@
 					<!-- Header-center -->
 					<ul class="header-bottom-center">
 						<div class="header-center-input">
+						<a  href="${pageContext.request.contextPath}/search">
 							<input type="text" placeholder="Nhập từ khóa tìm kiếm " />
+						</a>
+							
 						</div>
 					</ul>
 					<!-- end Header-center -->

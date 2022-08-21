@@ -166,7 +166,8 @@
 										<a href="${pageContext.request.contextPath}/shop/listProduct"
 											class="nav__dropdown-item">Tất cả sản phẩm</a> <a
 											href="${pageContext.request.contextPath}/shop/addProduct"
-											class="nav__dropdown-item">Thêm sản phẩm</a> <a href="#"
+											class="nav__dropdown-item">Thêm sản phẩm</a> 
+											<a href="${pageContext.request.contextPath}/shop/listProductBanned"
 											class="nav__dropdown-item">Sản phẩm vi phạm</a>
 									</div>
 								</div>
@@ -188,11 +189,11 @@
 								</div>
 							</div>
 
-							<a href="#" class="nav__link"> <i
-								class='bx bxs-discount nav__icon'></i> <span class="nav__name">Discount</span>
-							</a> <a href="#" class="nav__link"> <i
+							<a href="${pageContext.request.contextPath}/shop/listDiscount" class="nav__link"> <i
+								class='bx bxs-discount nav__icon'></i> <span class="nav__name">Khuyến mãi</span>
+							</a><!--  <a href="#" class="nav__link"> <i
 								class=' bx bxs-bar-chart-square nav__icon'></i> <span
-								class="nav__name">Report</span>
+								class="nav__name">Report</span> -->
 							</a>
 						</div>
 					</div>
@@ -567,7 +568,7 @@
 											<button type="submit" class="btn button primary">
 												<span>Xác Nhận</span>
 											</button>
-										</a> <a href="./ProductList.html">
+										</a> <a href="${pageContext.request.contextPath}/shop/listProduct">
 											<button type="button" class="btn btn-danger">Hủy</button>
 										</a>
 									</div>
@@ -580,17 +581,6 @@
 			</div>
 		</div>
 	</div>
-<script>
-function openNav() {
-  document.getElementById("layout-menu").style.left = "0";
-  document.getElementById("content-wrapper").style.opacity = "0.5";
-}
-
-function closeNav() {
-  document.getElementById("layout-menu").style.left = "-100%";
-  document.getElementById("content-wrapper").style.opacity= "1";
-}
-</script>
 	<script src="${pageContext.request.contextPath}/newjs/AddProduct.js"></script>
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
 </body>

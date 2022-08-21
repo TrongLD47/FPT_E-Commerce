@@ -239,7 +239,7 @@
 						</div>
 						<div class="product__box--detail">
 
-							<input type="hidden" id="value1" value="${product.unitPrice } vnđ"
+							<input type="hidden" id="value1" value="${product.unitPrice } đ"
 								disabled="disabled" /> <input type="hidden" id="value2"
 								value="${product.promotionPrice }  vnđ" disabled="disabled" /> <input
 								type="hidden" id="discount"
@@ -301,8 +301,9 @@
 							<div class="product__navigate">
 								<a class="btn btn-primary"
 									onclick="Product.addToCart(${product.id });"><span>Thêm
-										vào giỏ hàng</span></a><a class="btn btn-primary"><span>Đến
-										trang mua hàng</span></a>
+										vào giỏ hàng</span></a>
+								<a class="btn btn-primary" onclick="Product.addToCart(${product.id });" href="${pageContext.request.contextPath}/cart">
+								<span >Đến trang mua hàng</span></a>
 							</div>
 						</div>
 						<div class="product__box--detail">
@@ -334,7 +335,7 @@
 							<div class="follow__box">
 								<div class="follow__left" >
 									<div class="follow__img">
-										<img src="${product.shopEntity.linkImage}" alt="brand-img" href="${pageContext.request.contextPath}/shop-detail?id=${product.shopEntity.id}" />
+										<img src="${product.shopEntity.userEntity.path}" alt="brand-img" href="${pageContext.request.contextPath}/shop-detail?id=${product.shopEntity.id}" />
 									</div>
 									<div class="follow__text">
 									<a href="${pageContext.request.contextPath}/shop-detail?id=${product.shopEntity.id}">
@@ -653,9 +654,8 @@
 		<div class="sticky--checkout">
 			<div class="sticky--checkout__wrapper mid-container">
 				<div class="sticky-product__info">
-					<img src="/assets/imgs/shop/shop-banner.webp" />
-					<div class="sticky-product__name">Áo thun ngắn tay cổ tròn
-						ADLV Basic Pink Hồng ADLV Unisex</div>
+					<img src="${product.pathImage }" />
+					<div class="sticky-product__name">${product.name }</div>
 				</div>
 				<div class="sticky-product-one">1</div>
 				<div class="sticky-product__price"></div>
@@ -667,7 +667,9 @@
 				</div>
 				<div class="sticky-product__price--current"></div>
 				<div class="sticky-product__navigate">
-					<a class="btn btn-primary"><span>Đến trang mua hàng</span></a>
+					<a class="btn btn-primary" onclick="Product.addToCart(${product.id });" href="${pageContext.request.contextPath}/cart">
+					<span>Đến trang mua hàng</span></a>
+					
 				</div>
 			</div>
 		</div>

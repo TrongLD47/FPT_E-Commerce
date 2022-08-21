@@ -69,7 +69,7 @@
 							src="${pageContext.request.contextPath}/imgs/logo.png" alt="logo" />
 					</a></li>
 					<li class="header-bottom-item"><a href="#"> <span
-							class="header-bottom-item-text text-hover active">Shopping</span>
+							class="header-bottom-item-text text-hover active">FPT E-Commerce</span>
 					</a></li>
 
 				</ul>
@@ -138,7 +138,7 @@
 
 			<!-- ------------------------ Begin BREADCRUMB ------------------------------- -->
 			<div class="header__menu">
-				<a class="header__prev"><i class="fas fa-angle-left"></i><span
+				<a class="header__prev"  onclick="history.back()"><i class="fas fa-angle-left"></i><span
 					class="menu__text--back">Quay lại</span></a>
 			</div>
 			<!-- ------------------------ End BREADCRUMB ------------------------------- -->
@@ -407,6 +407,7 @@
 		<div class="footer_bot">Copyright 2022 &copy; FPT University
 			DaNang</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
 	
 		<script src="http://code.jquery.com/jquery-3.4.1.min.js" 

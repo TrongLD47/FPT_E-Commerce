@@ -301,9 +301,9 @@
 																	<div class="dropdown-menu">
 																		<a class="dropdown-item"
 																			href="${pageContext.request.contextPath}/admin/updateCategory?id=${item.id }"><i
-																			class="bx bx-edit-alt me-1"></i> Edit</a> <a
+																			class="bx bx-edit-alt me-1"></i> Sửa</a> <a
 																			class="dropdown-item" href="${pageContext.request.contextPath}/admin/deleteCategory?id=${item.id }" onclick="#"><i
-																			class="bx bx-trash me-1"></i> Delete</a>
+																			class="bx bx-trash me-1"></i> Xóa</a>
 																	</div>
 																</div>
 															</td>

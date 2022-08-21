@@ -193,16 +193,22 @@
 				</div>
 				<div class="swiper-slide">
 					<div class="slider-image">
-						<img src="${pageContext.request.contextPath}/imgs/slidetop-2.webp"
+						<img src="${pageContext.request.contextPath}/imgs/slidetop-4.webp"
 							" alt="" />
 					</div>
 				</div>
+				<%-- <div class="swiper-slide">
+					<div class="slider-image">
+						<img src="${pageContext.request.contextPath}/imgs/slidetop-2.webp"
+							" alt="" />
+					</div>
+				</div> --%>
 				<!-- Add Pagination -->
 			</div>
 			<div class="swiper-pagination"></div>
-
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
+			
 		</div>
 		<!-- end Slide -->
 
@@ -347,7 +353,7 @@
 						<li class="slide-bottom-item"><a href="#">
 								<div class="slide-bottom-img">
 									<img
-										src="${pageContext.request.contextPath}/imgs/slidebot-3.webp"
+										src="${pageContext.request.contextPath}/imgs/slidebot-8.webp"
 										alt="bran-new" />
 								</div>
 						</a></li>
@@ -361,7 +367,7 @@
 						<li class="slide-bottom-item"><a href="#">
 								<div class="slide-bottom-img">
 									<img
-										src="${pageContext.request.contextPath}/imgs/slidebot-5.webp"
+										src="${pageContext.request.contextPath}/imgs/slidebot-7.webp"
 										alt="bran-new" />
 								</div>
 						</a></li>
@@ -439,7 +445,7 @@
 					<li class="col c-12 m-4 l-4"><a href="#">
 							<div class="card">
 								<img
-									src="${pageContext.request.contextPath}/imgs/slidebot-4.webp"
+									src="${pageContext.request.contextPath}/imgs/slidebot-9.webp"
 									alt="tieu diem" />
 							</div>
 					</a></li>

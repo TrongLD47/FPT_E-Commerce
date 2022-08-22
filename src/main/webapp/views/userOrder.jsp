@@ -53,7 +53,7 @@
 			<div class="header-top">
 				<div class="header-top-left">
 					<i class="fas fa-home header-top-left-link"></i> <a
-						class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
+						class="header-top-left-link" href="#">Bán hàng cùng FEC</a>
 				</div>
 				<div class="header-top-right">
 					<div>
@@ -342,8 +342,8 @@
 							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
 						</li>
 						<li class="block_item"><a class="block_link"
-							href="email:customer@dosiinvn.com"
-							title="Email: customer@dosiinvn.com">Email:
+							href="email:customer@fecvn.com"
+							title="Email: customer@fecvn.com">Email:
 							Trongldde140257@fpt.edu.vn</a></li>
 					</ul>
 					<h5 class="block_heading">Kết nối với chúng tôi</h5>

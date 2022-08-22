@@ -116,7 +116,7 @@ public class AdminController {
 	 * Name Function : show list Category Author : ChuongDN Date Create : 2022/05/25
 	 * Description : show list Category for admin role
 	 **/
-	@GetMapping("/listCategory")
+	@GetMapping({"/listCategory","/"})
 	public String getService(Model model, HttpSession session) {
 		if (session.getAttribute("search") != null && session.getAttribute("search").equals("on")) {
 			model.addAttribute("listCategory", session.getAttribute("listSearch"));

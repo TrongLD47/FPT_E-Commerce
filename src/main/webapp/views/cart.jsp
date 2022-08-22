@@ -46,7 +46,13 @@
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath}/newcss/setting.css" />
 
-<title>User Cart</title>
+<title>FPT-EC</title>
+
+<meta name="description" content="" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon"
+	href="../imgs/logo.png" />
 </head>
 <!-- Header -->
 <header class="header-wrapper">
@@ -55,7 +61,7 @@
 		<div class="header-top">
 			<div class="header-top-left">
 				<i class="fas fa-home header-top-left-link"></i> <a
-					class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
+					class="header-top-left-link" href="#">Bán hàng cùng FEC</a>
 			</div>
 			<div class="header-top-right">
 				<div>
@@ -171,7 +177,7 @@
 									<div class="order__user-info">
 
 										<span class="order__user-info__brand">${item.shopName}</span>
-										<a class="btn btn-badge-border" href="${item.shopUrl}">
+										<a class="btn btn-badge-border" href="${pageContext.request.contextPath}/shop-detail?id=${item.shopId}">
 											<div class="btn-inner">
 												<i class="fa-solid fa-store"></i> <span
 													class="order__chat-text">Xem shop</span>

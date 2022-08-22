@@ -171,9 +171,9 @@
 								<div class="nav__dropdown-collapse">
 									<div class="nav__dropdown-content">
 										<a href="${pageContext.request.contextPath}/shop/listOrder"
-											class="nav__dropdown-item">Tât cả đơn hàng</a> <a
-											href="${pageContext.request.contextPath}/shop/listOrderCancel"
-											class="nav__dropdown-item">Đơn hủy</a>
+											class="nav__dropdown-item">Tât cả đơn hàng</a> 
+											<a href=""
+											class="nav__dropdown-item"></a>
 									</div>
 								</div>
 							</div>

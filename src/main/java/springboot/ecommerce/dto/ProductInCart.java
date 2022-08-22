@@ -22,4 +22,5 @@ public class ProductInCart {
     private String color;
     private String size;
     private String name;
+    private int shopId;
 }

@@ -49,5 +49,9 @@ public interface ProductService {
 	public Page<ProductEntity> getProductByNameOrCodeBanned(String keyword, int page, Integer id);
 	
 	public Page<ProductEntity> getProductPagingBanned(int page, Integer id);
-
+	
+	public int countProductOfShop(int id);
+	
+	public List<ProductEntity> getProductByShopId(int id);
+	
 }

@@ -7,11 +7,22 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>FPT E-Commerce</title>
+<title>FPT-EC</title>
+
+<meta name="description" content="" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon"
+	href="../imgs/logo.png" />
 <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/login.css">
 </head>
+<style>
+input::placeholder {    
+    opacity: .5;
+}
+</style>
 <body>
 	<div class="container">
 		<div class="forms-container">
@@ -25,7 +36,7 @@
 						<br>
 					</c:if>
 					<div class="input-field">
-						<i class="fas fa-user"></i> <input type="text" placeholder="ABCXYZ@gmail.com"
+						<i class="fas fa-user"></i> <input type="text" placeholder="Email"
 							name="email" id ="email">
 							
 					</div>

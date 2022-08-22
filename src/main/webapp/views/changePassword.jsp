@@ -61,7 +61,7 @@
 			<div class="header-top">
 				<div class="header-top-left">
 					<i class="fas fa-home header-top-left-link"></i> <a
-						class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
+						class="header-top-left-link" href="#">Bán hàng cùng FEC</a>
 				</div>
 				<div class="header-top-right">
 					<div>
@@ -297,7 +297,7 @@
 						<li class="block_item"><a class="block_link"
 							href="email:customer@dosiinvn.com"
 							title="Email: customer@dosiinvn.com">Email:
-								customer@dosiinvn.com</a></li>
+								customer@fpt.edu.vn</a></li>
 					</ul>
 					<h5 class="block_heading">Kết nối với chúng tôi</h5>
 					<ul class="block-app-list">
@@ -310,7 +310,7 @@
 					</ul>
 				</div>
 				<div class="block_wrapper">
-					<h5 class="block_heading">Về Dosiin</h5>
+					<h5 class="block_heading">Về FEC</h5>
 
 					<ul class="block_list">
 						<li class="block_item"><a class="block_link" href="#">Các

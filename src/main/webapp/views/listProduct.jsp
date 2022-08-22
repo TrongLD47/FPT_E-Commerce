@@ -58,20 +58,20 @@
 		<div class="header-bottom">
 
 			<!-- Header-left -->
-				<ul class="header-bottom-left">
+			<ul class="header-bottom-left">
 				<!-- begin SideBar toggle -->
-					<div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-						<a  onclick="openNav()" class="btn btn-default openbtn"><i
-							class="bx bx-menu bx-sm"></i></a>
-					</div>
-					<!-- emd SideBar toggle -->
-					<li class="header-bottom-logo"><a
-						href="${pageContext.request.contextPath}/home"> <img
-							src="${pageContext.request.contextPath}/imgs/logo.png"
-							alt="logo" />
-					</a></li>
-				</ul>
-				<!-- end Header-left -->
+				<div
+					class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+					<a onclick="openNav()" class="btn btn-default openbtn"><i
+						class="bx bx-menu bx-sm"></i></a>
+				</div>
+				<!-- emd SideBar toggle -->
+				<li class="header-bottom-logo"><a
+					href="${pageContext.request.contextPath}/home"> <img
+						src="${pageContext.request.contextPath}/imgs/logo.png" alt="logo" />
+				</a></li>
+			</ul>
+			<!-- end Header-left -->
 			<!-- Header-right -->
 			<ul class="header-bottom-right">
 				<li class="header-bottom-right-items">
@@ -114,7 +114,8 @@
 									<li><a
 										href="${pageContext.request.contextPath}/customer/updateProfile">
 											Thông tin </a></li>
-									<li><a href="logout"> Đăng xuất </a></li>
+									<li><a href="${pageContext.request.contextPath}/logout">
+											Đăng xuất </a></li>
 
 								</c:when>
 
@@ -127,70 +128,72 @@
 		</div>
 	</div>
 </header>
-<aside class="nav" id="layout-menu" >
+<aside class="nav" id="layout-menu">
 	<i class="fa-solid fa-angle-left" onclick="closeNav()"></i>
-		<nav class="nav__container " id="layout-navbar">
+	<nav class="nav__container " id="layout-navbar">
 
-			<div class="list-group">
+		<div class="list-group">
 
 
-				<div id="wrapper-navbar">
-					<div class="nav__list">
-						<div class="nav__items">
-							<!-- <div class="top-nav">
+			<div id="wrapper-navbar">
+				<div class="nav__list">
+					<div class="nav__items">
+						<!-- <div class="top-nav">
                               <h3 class="nav__subtitle">Menu</h3>
                           </div> -->
-							<!-- <a href="#" class="nav__link active">
+						<!-- <a href="#" class="nav__link active">
                               <i class='bx bx-home nav__icon'></i>
                               <span class="nav__name">Home</span>
                           </a> -->
 
-							<div class="nav__dropdown">
-								<a class="nav__link"> <i class='bx bx-closet nav__icon'></i>
-									<span class="nav__name">Quản lý sản phẩm</span>
+						<div class="nav__dropdown">
+							<a class="nav__link"> <i class='bx bx-closet nav__icon'></i>
+								<span class="nav__name">Quản lý sản phẩm</span>
 
-								</a>
+							</a>
 
-								<div class="nav__dropdown-collapse">
-									<div class="nav__dropdown-content">
-										<a href="${pageContext.request.contextPath}/shop/listProduct"
-											class="nav__dropdown-item">Tất cả sản phẩm</a> <a
-											href="${pageContext.request.contextPath}/shop/addProduct"
-											class="nav__dropdown-item">Thêm sản phẩm</a> 
-											<a href="${pageContext.request.contextPath}/shop/listProductBanned"
-											class="nav__dropdown-item">Sản phẩm vi phạm</a>
-									</div>
+							<div class="nav__dropdown-collapse">
+								<div class="nav__dropdown-content">
+									<a href="${pageContext.request.contextPath}/shop/listProduct"
+										class="nav__dropdown-item">Tất cả sản phẩm</a> <a
+										href="${pageContext.request.contextPath}/shop/addProduct"
+										class="nav__dropdown-item">Thêm sản phẩm</a> <a
+										href="${pageContext.request.contextPath}/shop/listProductBanned"
+										class="nav__dropdown-item">Sản phẩm vi phạm</a>
 								</div>
 							</div>
+						</div>
 
-							<div class="nav__dropdown">
-								<a class="nav__link"> <i class='bx bx-task nav__icon'></i> <span
-									class="nav__name">Quản lý đơn hàng</span>
+						<div class="nav__dropdown">
+							<a class="nav__link"> <i class='bx bx-task nav__icon'></i> <span
+								class="nav__name">Quản lý đơn hàng</span>
 
-								</a>
+							</a>
 
-								<div class="nav__dropdown-collapse">
-									<div class="nav__dropdown-content">
-										<a href="${pageContext.request.contextPath}/shop/listOrder"
-											class="nav__dropdown-item">Tât cả đơn hàng</a> <a
-											href="${pageContext.request.contextPath}/shop/listOrderCancel"
-											class="nav__dropdown-item">Đơn hủy</a>
-									</div>
+							<div class="nav__dropdown-collapse">
+								<div class="nav__dropdown-content">
+									<a href="${pageContext.request.contextPath}/shop/listOrder"
+										class="nav__dropdown-item">Tât cả đơn hàng</a>
+										<a href=""
+										class="nav__dropdown-item"></a>
 								</div>
 							</div>
+						</div>
 
-							<a href="${pageContext.request.contextPath}/shop/listDiscount" class="nav__link"> <i
-								class='bx bxs-discount nav__icon'></i> <span class="nav__name">Khuyến mãi</span>
-							</a> <!-- a href="#" class="nav__link"> <i
+						<a href="${pageContext.request.contextPath}/shop/listDiscount"
+							class="nav__link"> <i class='bx bxs-discount nav__icon'></i>
+							<span class="nav__name">Khuyến mãi</span>
+						</a>
+						<!-- a href="#" class="nav__link"> <i
 								class=' bx bxs-bar-chart-square nav__icon'></i> <span
 								class="nav__name">Report</span> -->
-							</a>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
-		</nav>
-	</aside>
+		</div>
+	</nav>
+</aside>
 <body>
 
 	<div class="">
@@ -253,10 +256,11 @@
 											<th>MÃ SẢN PHẨM</th>
 											<th>DANH MỤC PHỤ</th>
 											<th>GIÁ</th>
-										<!-- 	<th>SỐ LƯỢNG</th> -->
+											<!-- 	<th>SỐ LƯỢNG</th> -->
 											<!-- <th>SIZE</th> -->
 											<th>KHUYẾN MÃI</th>
 											<th>GIÁ KHUYẾN MÃI</th>
+											<th>TRẠNG THÁI</th>
 											<th>THAO TÁC</th>
 										</tr>
 									</thead>
@@ -272,10 +276,21 @@
 														<td><c:out value="${item.code }"></c:out></td>
 														<td><c:out value="${item.subCategoryEntity.nameSub }"></c:out></td>
 														<td><c:out value="${item.unitPrice }  vnđ"></c:out></td>
-											<%-- 			<td><c:out value="${item.quantity }"></c:out></td> --%>
+														<%-- 			<td><c:out value="${item.quantity }"></c:out></td> --%>
 														<%-- <td><c:out value="${item.productDetailsEntity.size }"></c:out></td> --%>
 														<td><c:out value="${item.discountEntity.percentz }%"></c:out></td>
 														<td><c:out value="${item.promotionPrice }"></c:out></td>
+														<c:choose>
+															<c:when test="${item.status == '0'}">
+																<td>Đang đợi duyệt</td>
+															</c:when>
+															<c:when test="${item.status == '1'}">
+																<td>Đã duyệt</td>
+															</c:when>
+															<c:when test="${item.status == '2'}">
+																<td>Bị từ chối</td>
+															</c:when>
+														</c:choose>
 														<td>
 															<div class="dropdown">
 																<button type="button"

@@ -48,7 +48,7 @@
 			<div class="header-top">
 				<div class="header-top-left">
 					<i class="fas fa-home header-top-left-link"></i> <a
-						class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
+						class="header-top-left-link" href="#">Bán hàng cùng FEC</a>
 				</div>
 				<div class="header-top-right">
 					<div>
@@ -158,14 +158,14 @@
 
 	<!-- ------------------------ Begin BANNER ------------------------------- -->
 	<section class="banner--brand page-section"
-		style="background-image: url('${pageContext.request.contextPath}/imgs/shop/shop-banner.webp')">
+		style="background-image: url('${pageContext.request.contextPath}/imgs/shop/dai-hoc-4.jpg'); height: 400px;" >
 		<div class="brand__wrapper">
 			<div class="brand__left">
 				<div class="brand-item__info">
 					<div class="brand-item__detail-wrapper">
 						<a href="#"><img width="179" height="179"
 							class="brand-item__logo-img" alt="brand-name"
-							src="${shop.linkImage}" /></a>
+							src="${shop.path1 }" /></a>
 						<div class="brand-item__detail">
 							<div class="brand-item__name">
 								<h3>${shop.name}</h3>
@@ -173,7 +173,7 @@
 							<ul class="brand-item__social-list">
 								<li><a href="" title="Sản phẩm">
 										<article class="brand-item__social-item">
-											<h6>17</h6>
+											<h6>${countProduct}</h6>
 											<p>
 												<i class="fa-solid fa-shop"></i> <span>Sản phẩm</span>
 											</p>
@@ -195,11 +195,11 @@
 					</a> -->
 				</div>
 			</div>
-			<div class="brand__right">
-				<div class="brand-item__banner-image__wrapper">
+			<div class="brand__right " >
+				<div class="brand-item__banner-image__wrapper" >
 					<img class="brand-item__banner-image"
-						src="${pageContext.request.contextPath}/imgs/shop/shop-banner-background.webp"
-						style="width: 100%; height: 100%" />
+						src="${shop.path1 }" style="width: 100%; height: 50%; object-position: 1% -190px; border-radius: 10px"
+						 />
 				</div>
 			</div>
 		</div>
@@ -235,7 +235,7 @@
 		<!-- ------------------------ End PRODUCT ------------------------------- -->
 
 		<!-- ------------------------ Begin CATEGORY-LIST ------------------------------- -->
-		<section class="page-section mt-1">
+		<%-- <section class="page-section mt-1">
 			<div class="tittle-product">
 				<h3>Danh mục sản phẩm</h3>
 				<ul class="top-category row">
@@ -345,156 +345,11 @@
 					</a></li>
 				</ul>
 			</div>
-		</section>
+		</section> --%>
 		<!-- ------------------------ End CATEGORY-LIST ------------------------------- -->
 
 		<!-- ------------------------ Begin PRODUCT ------------------------------- -->
 		<section class="page-section mt-1">
-			<div class="tittle-product">
-				<h3>Gợi ý cho bạn</h3>
-			</div>
-			<ul class="category-about row">
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card2.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card3.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card4.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card5.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card2.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card1.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card1.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card1.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card1.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-				<li class="col c-6 m-4 l-2-4 py-1"><a href="#">
-						<div class="card">
-							<div class="card-img">
-								<img src="/assets/img/product/card1.webp" alt="" />
-							</div>
-							<div class="card-text">
-								<h3 class="card-title text-hover">TEELAB</h3>
-								<p class="card-des truncate">Áo Thun Teelab Grey Trame TS049</p>
-								<span class="card-price"> 350.000đ </span> <span
-									class="card-price-discount"> -50% </span>
-								<p class="card-price-cost">175.000đ</p>
-							</div>
-						</div>
-				</a></li>
-			</ul>
 			<!-- <button class="button primary">
 				<span>Xem thêm</span>
 			</button> -->
@@ -1177,8 +1032,8 @@
 							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
 						</li>
 						<li class="block_item"><a class="block_link"
-							href="email:customer@dosiinvn.com"
-							title="Email: customer@dosiinvn.com">Email:
+							href="email:customer@fecvn.com"
+							title="Email: customer@fecvn.com">Email:
 							Trongldde140257@fpt.edu.vn</a></li>
 					</ul>
 					<h5 class="block_heading">Kết nối với chúng tôi</h5>

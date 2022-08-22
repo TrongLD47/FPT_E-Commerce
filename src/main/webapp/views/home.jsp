@@ -44,7 +44,13 @@
 	href="${pageContext.request.contextPath}/css/components/modal.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/components/pagination.css" />
-<title>Home</title>
+<title>FPT-EC</title>
+
+<meta name="description" content="" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon"
+	href="../imgs/logo.png" />
 </head>
 <body>
 	<div class="preloader">
@@ -193,22 +199,16 @@
 				</div>
 				<div class="swiper-slide">
 					<div class="slider-image">
-						<img src="${pageContext.request.contextPath}/imgs/slidetop-4.webp"
-							" alt="" />
-					</div>
-				</div>
-				<%-- <div class="swiper-slide">
-					<div class="slider-image">
 						<img src="${pageContext.request.contextPath}/imgs/slidetop-2.webp"
 							" alt="" />
 					</div>
-				</div> --%>
+				</div>
 				<!-- Add Pagination -->
 			</div>
 			<div class="swiper-pagination"></div>
+
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
-			
 		</div>
 		<!-- end Slide -->
 
@@ -353,7 +353,7 @@
 						<li class="slide-bottom-item"><a href="#">
 								<div class="slide-bottom-img">
 									<img
-										src="${pageContext.request.contextPath}/imgs/slidebot-8.webp"
+										src="${pageContext.request.contextPath}/imgs/slidebot-3.webp"
 										alt="bran-new" />
 								</div>
 						</a></li>
@@ -367,7 +367,7 @@
 						<li class="slide-bottom-item"><a href="#">
 								<div class="slide-bottom-img">
 									<img
-										src="${pageContext.request.contextPath}/imgs/slidebot-7.webp"
+										src="${pageContext.request.contextPath}/imgs/slidebot-5.webp"
 										alt="bran-new" />
 								</div>
 						</a></li>
@@ -445,7 +445,7 @@
 					<li class="col c-12 m-4 l-4"><a href="#">
 							<div class="card">
 								<img
-									src="${pageContext.request.contextPath}/imgs/slidebot-9.webp"
+									src="${pageContext.request.contextPath}/imgs/slidebot-4.webp"
 									alt="tieu diem" />
 							</div>
 					</a></li>
@@ -529,8 +529,8 @@
 							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
 						</li>
 						<li class="block_item"><a class="block_link"
-							href="email:customer@dosiinvn.com"
-							title="Email: customer@dosiinvn.com">Email:
+							href="email:customer@fecvn.com"
+							title="Email: customer@fecvn.com">Email:
 								Trongldde140257@fpt.edu.vn</a></li>
 					</ul>
 					<h5 class="block_heading">Kết nối với chúng tôi</h5>

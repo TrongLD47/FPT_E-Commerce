@@ -178,9 +178,8 @@
 								<div class="nav__dropdown-collapse">
 									<div class="nav__dropdown-content">
 										<a href="${pageContext.request.contextPath}/shop/listOrder"
-											class="nav__dropdown-item">Tât cả đơn hàng</a> <a
-											href="${pageContext.request.contextPath}/shop/listOrderCancel"
-											class="nav__dropdown-item">Đơn hủy</a>
+											class="nav__dropdown-item">Tât cả đơn hàng</a> 
+											<a  class="nav__dropdown-item"></a>
 									</div>
 								</div>
 							</div>
@@ -226,12 +225,12 @@
 									<div class="btn-group">
 										<a href="#">
 											<button type="submit" class="button btn primary">
-												<span>Search</span>
+												<span>tìm kiếm</span>
 											</button>
 										</a> <a href="#">
 											<button type="button"
 												class="btn btn-outline-secondary btn-clear">
-												<span>Clear</span>
+												<span>Xóa</span>
 											</button>
 										</a>
 									</div>
@@ -260,8 +259,8 @@
 								<thead class="table-light">
 									<tr>
 										<th>STT</th>
-										<th>Tên</th>
-										<th>Mã</th>
+										
+										<th>Mã giảm giá</th>
 										<th>Phần trăm khuyến mãi</th>
 										<th>Ngày bắt đầu</th>
 										<th>Ngày kết thúc</th>
@@ -278,7 +277,7 @@
 
 												<tr>
 													<th scope="row"><c:out value="${theCount.count}"></c:out></th>
-													<td><c:out value="${item.name }"></c:out></td>
+													<%-- <td><c:out value="${item.name }"></c:out></td> --%>
 													<td><c:out value="${item.code }"></c:out></td>
 													<td><c:out value="${item.percentz }"></c:out></td>
 													<td><c:out value="${item.startDateDiscount }"></c:out></td>

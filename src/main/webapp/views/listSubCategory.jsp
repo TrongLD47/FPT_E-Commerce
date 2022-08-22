@@ -10,13 +10,12 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<title>SubCategory</title>
+<title>FPT-EC</title>
 
 <meta name="description" content="" />
 
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon"
-	href="${pageContext.request.contextPath}/assets/img/favicon/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="../imgs/logo.png" />
 
 <!-- Fonts -->
 <link rel="preconnect"
@@ -58,12 +57,12 @@
 <script src="${pageContext.request.contextPath}/assets/js/config.js"></script>
 </head>
 <div class="preloader">
-		<div class="preloader-inner">
-			<div class="preloader-icon">
-				<span></span> <span></span>
-			</div>
+	<div class="preloader-inner">
+		<div class="preloader-icon">
+			<span></span> <span></span>
 		</div>
 	</div>
+</div>
 <body>
 	<div class="layout-wrapper layout-content-navbar">
 		<div class="layout-container">
@@ -72,7 +71,7 @@
 			<aside id="layout-menu"
 				class="layout-menu menu-vertical menu bg-menu-theme">
 				<div class="app-brand demo">
-					<a href="index.html" class="app-brand-link"> <span
+					<a href="${pageContext.request.contextPath}/home" class="app-brand-link"> <span
 						class="app-brand-logo demo"> <img alt="" src="../imgs/logo.png">
 					</span> <span class="app-brand-text demo menu-text fw-bolder ms-2">FPT-EC</span>
 					</a> <a href="javascript:void(0);"
@@ -85,7 +84,7 @@
 
 				<ul class="menu-inner py-1">
 					<!-- Dashboard -->
-					<li class="menu-item active"><a href="index.html"
+					<li class="menu-item active"><a href="${pageContext.request.contextPath}/admin/mainAdmin"
 						class="menu-link"> <i
 							class="menu-icon tf-icons bx bx-home-circle"></i>
 							<div data-i18n="Analytics">Bảng điều khiển</div>
@@ -94,22 +93,25 @@
 					<!-- E-Commerce -->
 					<li class="menu-header small text-uppercase"><span
 						class="menu-header-text">E-Commerce</span></li>
-					<li class="menu-item"><a href="javascript:void(0);"
+					<li class="menu-item "><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons bx bx-dock-top"></i>
 							<div data-i18n="Category">Danh mục</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/listCategory"
+							<li class="menu-item "><a href="${pageContext.request.contextPath}/admin/listCategory"
 								class="menu-link">
 									<div data-i18n="CategoryList">Tất cả danh mục</div>
 							</a></li>
-							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/addCategory"
+							<li class="menu-item "><a href="${pageContext.request.contextPath}/admin/addCategory"
 								class="menu-link">
-									<div data-i18n="AddSubCategory">Thêm danh mục</div>
+									<div data-i18n="AddCategory">Thêm danh mục</div>
 							</a></li>
 
 						</ul></li>
+
+
+
 					<li class="menu-item active"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <!-- <i class="menu-icon tf-icons bx bx-dock-top"></i> -->
 							<i class="menu-icon tf-icons bx bx-copy"></i>
@@ -120,25 +122,49 @@
 								class="menu-link">
 									<div data-i18n="SubCategoryList">Tất cả danh mục phụ</div>
 							</a></li>
-							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/addSubCategory"
+							<li class="menu-item "><a href="${pageContext.request.contextPath}/admin/addSubCategory"
 								class="menu-link">
 									<div data-i18n="AddSubCategory">Thêm danh mục phụ</div>
 							</a></li>
 
 						</ul></li>
+
+					<!-- <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+              <div data-i18n="SubCategory"> Sub Caregory</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="./SubCategoryList.Html" class="menu-link">
+                  <div data-i18n="SubCategoryList"> Sub Category List</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./AddSubCategory.html" class="menu-link">
+                  <div data-i18n="AddSubCategory">Add Sub Category</div>
+                </a>
+              </li>
+
+            </ul>
+          </li> -->
+
+
+
+
 					<li class="menu-item"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons bx bx-cube-alt"></i>
-							<div data-i18n="Misc">Misc</div>
+							<div data-i18n="Misc">Yêu Cầu</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a href="pages-misc-error.html"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/requestProduct"
 								class="menu-link">
-									<div data-i18n="Error">Error</div>
+									<div data-i18n="Error">Yêu cầu sản phẩm</div>
 							</a></li>
 							<li class="menu-item"><a
-								href="pages-misc-under-maintenance.html" class="menu-link">
-									<div data-i18n="Under Maintenance">Under Maintenance</div>
+								href="${pageContext.request.contextPath}/admin/requestShop" class="menu-link">
+									<div data-i18n="Under Maintenance">Yêu cầu trở thành Shop</div>
 							</a></li>
 						</ul></li>
 				</ul>
@@ -169,7 +195,8 @@
 							<div class="navbar-nav align-items-center">
 								<div class="nav-item d-flex align-items-center">
 									<input type="text" class="form-control border-0 shadow-none"
-										placeholder="Tìm kiếm..." aria-label="Search..." name="keyword" />
+										placeholder="Tìm kiếm..." aria-label="Search..."
+										name="keyword" />
 								</div>
 								<div class="input-group-prepend">
 									<button class="btn btn-outline-secondary" type="submit"
@@ -210,34 +237,17 @@
 													</div>
 												</div>
 												<div class="flex-grow-1">
-													<span class="fw-semibold d-block">John Doe</span> <small
-														class="text-muted">Admin</small>
+													<span class="fw-semibold d-block">Admin</span> <small
+														class="text-muted"></small>
 												</div>
 											</div>
 									</a></li>
 									<li>
 										<div class="dropdown-divider"></div>
-									</li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-user me-2"></i> <span class="align-middle">My
-												Profile</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-cog me-2"></i> <span class="align-middle">Settings</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <span
-											class="d-flex align-items-center align-middle"> <i
-												class="flex-shrink-0 bx bx-credit-card me-2"></i> <span
-												class="flex-grow-1 align-middle">Billing</span> <span
-												class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-										</span>
-									</a></li>
-									<li>
-										<div class="dropdown-divider"></div>
-									</li>
-									<li><a class="dropdown-item" href="auth-login-basic.html">
+									</li>								
+									<li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">
 											<i class="bx bx-power-off me-2"></i> <span
-											class="align-middle">Log Out</span>
+											class="align-middle">Đăng xuất</span>
 									</a></li>
 								</ul>
 							</li>
@@ -259,10 +269,11 @@
 								<div class="header-table">
 									<h4 class="card-header">Tất cả danh mục phụ</h4>
 									<div class="btn btnArond button-wrapper">
-										<a href="${pageContext.request.contextPath}/admin/addSubCategory">
-											<button type="button" class="btn btn-primary"
-												>
-												<i class="fas fa-plus icon-fas"></i> <span>Thêm danh mục phụ</span>
+										<a
+											href="${pageContext.request.contextPath}/admin/addSubCategory">
+											<button type="button" class="btn btn-primary">
+												<i class="fas fa-plus icon-fas"></i> <span>Thêm danh
+													mục phụ</span>
 											</button>
 										</a>
 										<!-- <button type="button" class="btn btn-primary"><i class="fas fa-plus icon-fas"></i>Add Sub-Category</button> -->
@@ -287,11 +298,11 @@
 											<c:choose>
 												<c:when
 													test="${listSubCategory !=null && listSubCategory.size() gt 0}">
-													<c:forEach items="${requestScope.listSubCategory }" var="item"
-														varStatus="theCount">
+													<c:forEach items="${requestScope.listSubCategory }"
+														var="item" varStatus="theCount">
 														<tr>
 															<th scope="row"><c:out value="${theCount.count}"></c:out></th>
-															
+
 															<td><c:out value="${item.category.name }"></c:out></td>
 															<td><c:out value="${item.nameSub }"></c:out></td>
 															<td><c:out value="${item.codeSub }"></c:out></td>
@@ -306,7 +317,9 @@
 																		<a class="dropdown-item"
 																			href="${pageContext.request.contextPath}/admin/updateSubCategory?id=${item.id }"><i
 																			class="bx bx-edit-alt me-1"></i> Edit</a> <a
-																			class="dropdown-item" href="${pageContext.request.contextPath}/admin/deleteSubCategory?id=${item.id }" onclick="showMess(${item.id})"><i
+																			class="dropdown-item"
+																			href="${pageContext.request.contextPath}/admin/deleteSubCategory?id=${item.id }"
+																			onclick="showMess(${item.id})"><i
 																			class="bx bx-trash me-1"></i> Delete</a>
 																	</div>
 																</div>

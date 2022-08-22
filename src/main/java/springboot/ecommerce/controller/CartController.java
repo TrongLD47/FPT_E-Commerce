@@ -87,6 +87,7 @@ public class CartController {
             productInCart.setUnitPrice(productEntity.getUnitPrice());
             productInCart.setPromotionPrice(productEntity.getPromotionPrice());
             productInCart.setPercentz(productEntity.getDiscountEntity().getPercentz());
+            productInCart.setShopId(productEntity.getShopEntity().getId());
             cart.getProductInCarts().add(productInCart);
         }
 

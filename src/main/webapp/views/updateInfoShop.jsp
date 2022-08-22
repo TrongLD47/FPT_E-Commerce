@@ -106,10 +106,27 @@
 	font-size: 18px;
 	transition: all 0.5s ease;
 }
+
+.error {
+	color: red;
+}
 </style>
-<title>Shop Profile</title>
+<title>FPT-EC</title>
+
+<meta name="description" content="" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon"
+	href="../imgs/logo.png" />
 </head>
 <body>
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span> <span></span>
+			</div>
+		</div>
+	</div>
 	<!-- Header -->
 	<header class="header-wrapper">
 		<div class="header fixed-header">
@@ -117,7 +134,7 @@
 			<div class="header-top">
 				<div class="header-top-left">
 					<i class="fas fa-home header-top-left-link"></i> <a
-						class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
+						class="header-top-left-link" href="#">Bán hàng cùng FEC</a>
 				</div>
 				<div class="header-top-right">
 					<div>
@@ -138,13 +155,13 @@
 				<ul class="header-bottom-left">
 					<li class="header-bottom-logo"><a
 						href="${pageContext.request.contextPath}/home"> <img
-							src="${pageContext.request.contextPath}/logo.svg" alt="logo" />
+							src="${pageContext.request.contextPath}/imgs/logo.png" alt="logo" />
 					</a></li>
 					<li class="header-bottom-item"><a href="#"> <span
-							class="header-bottom-item-text text-hover active">Shopping</span>
+							class="header-bottom-item-text text-hover active">FPT E-Commerce</span>
 					</a></li>
 					<li class="header-bottom-item"><a href="#"> <span
-							class="header-bottom-item-text text-hover">Style</span>
+							class="header-bottom-item-text text-hover"></span>
 					</a></li>
 				</ul>
 				<!-- end Header-left -->
@@ -157,74 +174,59 @@
 				<!-- end Header-center -->
 				<!-- Header-right -->
 				<ul class="header-bottom-right">
-					<li class="header-bottom-right-items">
-						<div class="header-bottom-right-item">
-							<a href="#"> <i class="far fa-bell"></i>
-							</a>
-						</div>
-					</li>
-					<li class="header-bottom-right-items">
-						<div class="header-bottom-right-item">
-							<a href="${pageContext.request.contextPath}/cart"> <i
-								class="fas fa-shopping-bag"><span class="badge"
-									id="quantity-product-in-cart"></span></i>
-							</a>
-						</div>
-					</li>
-					<li class="header-bottom-right-items user action ">
-						<div class="profile" onclick="menuToggle();">
+						<li class="header-bottom-right-items">
 							<div class="header-bottom-right-item">
-								<a href="#"> <i class="far fa-user"></i>
+								<a href="#"> <i class="far fa-bell"></i>
 								</a>
 							</div>
-							<div class="profile-right">
-
-								<a class="about-user" href="#"> <span class="about-user-1"></span>
-									<span class="about-user-2">Xin chào!</span> <span
-									class="about-user-1"><c:out
-											value="${sessionScope.email }"></c:out></span>
+						</li>
+						<li class="header-bottom-right-items">
+							<div class="header-bottom-right-item">
+								<a href="${pageContext.request.contextPath}/cart"> <i
+									class="fas fa-shopping-bag "><span class="badge"
+										id="quantity-product-in-cart"></span></i>
 								</a>
 							</div>
-						</div>
-						<div class="menu">
-							<ul>
-								<c:choose>
-									<c:when test="${sessionScope.email == null}">
-										<li><a href="login">Đăng Nhập</a></li>
-										<li class="border-top"><a href="register">Đăng Ký</a></li>
-									</c:when>
-									<c:when test="${sessionScope.email != null}">
-										<li><a
-											href="${pageContext.request.contextPath}/customer/updateProfile">
-												Thông tin </a></li>
-										<li><a href="logout"> Đăng xuất </a></li>
+						</li>
+						<li class="header-bottom-right-items user action ">
+							<div class="profile" onclick="menuToggle();">
+								<div class="header-bottom-right-item">
+									<a href="#"> <i class="far fa-user"></i>
+									</a>
+								</div>
+								<div class="profile-right">
 
-									</c:when>
+									<a class="about-user" href="#"> <span class="about-user-1"></span>
+										<span class="about-user-2">Xin chào!</span> <span
+										class="about-user-1"><c:out
+												value="${sessionScope.email }"></c:out></span>
+									</a>
+								</div>
+							</div>
+							<div class="menu">
+								<ul>
+									<c:choose>
+										<c:when test="${sessionScope.email == null}">
+											<li><a href="login">Đăng Nhập</a></li>
+											<li class="border-top"><a href="register">Đăng Ký</a></li>
+										</c:when>
+										<c:when test="${sessionScope.email != null}">
+											<li><a
+												href="#">
+													Thông tin </a></li>
+											<li><a href="${pageContext.request.contextPath}/logout"> Đăng xuất </a></li>
 
-								</c:choose>
-							</ul>
-						</div>
-					</li>
-				</ul>
+										</c:when>
+
+									</c:choose>
+								</ul>
+							</div>
+						</li>
+					</ul>
 				<!-- end Header-right -->
 			</div>
 			<!-- end Header - bottom -->
 
-			<!-- ------------------------ Begin BREADCRUMB ------------------------------- -->
-			<ul class="category">
-				<li class="category-item text-hover"><a href="#">Sản phẩm</a></li>
-				<li class="category-item text-hover"><a href="#">Nam</a></li>
-				<li class="category-item text-hover"><a href="#">Nữ</a></li>
-				<li class="category-item text-hover"><a href="#">Phụ kiện</a></li>
-				<li class="category-item text-hover"><a href="#">Thương
-						hiệu</a></li>
-				<li class="category-item text-hover"><a href="#">Xếp hạng</a></li>
-				<li class="category-item text-hover"><a href="#">Mới nhất </a>
-				</li>
-				<li class="category-item text-hover"><a href="#">Giá sốc </a></li>
-				<li class="category-item text-hover"><a href="#">Sự kiện </a></li>
-			</ul>
-			<!-- ------------------------ End BREADCRUMB ------------------------------- -->
 		</div>
 
 	</header>
@@ -240,9 +242,11 @@
 					<div class="aside__user">
 						<div class="aside__user-img">
 							<img
-								src="${pageContext.request.contextPath}/imgs/shop/shop-banner.webp" />
+								src="${pageContext.request.contextPath}/${sessionScope.img1 }" />
 						</div>
-						<div class="aside__user-name">Name Of Shop</div>
+						<div class="aside__user-name">
+							<c:out value="${sessionScope.nameShop }"></c:out>
+						</div>
 					</div>
 					<ul class="nav">
 						<li class="nav-item active" data-tab-select="user-information">
@@ -260,12 +264,12 @@
 							</ul>
 						</li>
 						<li class="nav-item" data-tab-select="user-order"><a
-							class="nav-link" href="/pages/user-order.html"> <span
+							class="nav-link" href="${pageContext.request.contextPath}/shop/listOrder"> <span
 								class="menu-icon"> <i class="fab fa-shopify"></i>
 							</span> <span class="menu-title">Đơn hàng</span>
 						</a></li>
 						<li class="nav-item" data-tab-select="user-order"><a
-							class="nav-link" href="/pages/user-order.html"> <span
+							class="nav-link" href="${pageContext.request.contextPath}/shop/listProduct"> <span
 								class="menu-icon"> <i class="fab fa-shopify"></i>
 							</span> <span class="menu-title">Sản phẩm</span>
 						</a></li>
@@ -279,42 +283,59 @@
 						<div class="user-info-description">Quản lý hồ sơ để bảo mật
 							tài khoản</div>
 						<div class="divider"></div>
+						<c:if test="${message != null }">
+							<span class="error"><c:out value="${message }"></c:out></span>
+						</c:if>
 						<div class="user-info-form">
-							<form class="form" autocomplete="no-thanks" id="shopinfo">
+							<form:form class="form" autocomplete="no-thanks"
+								enctype="multipart/form-data"
+								action="${pageContext.request.contextPath}/shop/doUpdateShopInfo"
+								modelAttribute="shop" method="post">
 								<div class="form__wrapper">
 									<div class="form__left">
-										<div class="err">
-											<!-- err show -> Add show to the err if you want it to display -->
-											<p>
-												<span>Lỗi: </span> <span>Số điện thoại không đúng</span>
-											</p>
+										<form:hidden path="id" readonly="true" />
+										<form:hidden path="status" readonly="true" />
+										<div class="form-group">
+											<label>Email Shop</label>
+											<form:input type="text" cssClass="form-input" path="email"
+												readonly="true" />
 										</div>
 
 										<div class="form-group">
-											<label>Tên Shop</label> <input type="text" class="form-input"
-												placeholder="Tên Shop của bạn" autocomplete="off"  id="shopname"/>
+											<label>Tên Shop</label>
+											<form:input type="text" id="shopname" cssClass="form-input"
+												path="name" placeholder="Tên Shop của bạn"
+												autocomplete="off" />
 										</div>
-										<span  style="color: red; padding-left:110px" id="shopname_error"></span>
+										<span style="color: red; padding-left: 110px"
+											id="shopname_error"></span>
 										<div class="form-group">
-											<label>Số điện thoại</label> <input type="tel"
-												class="form-input" placeholder="Số điện thoại"
-												autocomplete="off"  id="sdtshop"/>
+											<label>Số điện thoại</label>
+											<form:input type="text" cssClass="form-input" path="phone"
+												id="sdtshop" placeholder="Số điện thoại" autocomplete="off" />
 										</div>
-											<span  style="color: red; padding-left:110px" id="sdtshop_error"></span>
+										<span style="color: red; padding-left: 110px"
+											id="sdtshop_error"></span>
 										<div class="form-group">
-											<label>Địa chỉ</label> <input type="text" class="form-input"
-												placeholder="Địa chỉ" autocomplete="off"value="" id="addressshop" />
+											<label>Địa chỉ</label>
+											<form:input type="text" cssClass="form-input" path="address"
+												placeholder="Địa chỉ" autocomplete="off" id="addressshop" />
 										</div>
-										<span  style="color: red; padding-left:110px" id="addressshop_error"></span>
-										
+										<span style="color: red; padding-left: 110px"
+											id="addressshop_error"></span>
+
 										<div class="form-group">
 											<label>Mô tả shop</label>
-
-											<textarea class="form-input" placeholder="mô tả"
-												autocomplete="off" value="" id="shopdesc"></textarea>
+											<form:textarea cssClass="form-input" path="description"
+												placeholder="mô tả" autocomplete="off" value=""
+												id="shopdesc" />
 										</div>
-											<span  style="color: red; padding-left:110px" id="shopdesc_error"></span>
-
+										<span style="color: red; padding-left: 110px"
+											id="shopdesc_error"></span>
+										<div class="form-group">
+											<label>Chọn hình nền shop</label> <input type="file"
+												name="multipartFile1" accept="image/png, image/jpeg" />
+										</div>
 
 										<div class="form-button">
 											<button type="submit" class="btn btn-primary">
@@ -326,41 +347,30 @@
 									<div class="form__right">
 										<div class="user__image1">
 											<img
-												src="${pageContext.request.contextPath}/imgs/slidebot-6.webp"
+												src="${pageContext.request.contextPath}/${sessionScope.img2 }"
 												alt="banner"> <label
 												class="upload__button btn btn-badge-border" for="banner">
-												<div class="btn-inner" style="opacity: 0.7;">
+												<div class="btn-inner" style="opacity: 0.7">
 													<span>Chọn ảnh bìa</span>
 												</div>
-											</label><input type="file" ref="banner" id="banner"
-												accept=".png, .jpg, .jpeg" @change="fileChange" />
-											<div class="user__image">
-												<div class="user__image-upload">
-													<img
-														src="${pageContext.request.contextPath}/imgs/shop/shop-banner.webp"
-														alt="avatar" /> <label
-														class="upload__button btn btn-badge-border" for="avatar">
-														<div class="btn-inner1">
-															<span>Sửa</span>
-														</div>
-													</label><input type="file" ref="userAvatar" id="avatar"
-														accept=".png, .jpg, .jpeg" @change="fileChange" />
-												</div>
-											</div>
+											</label><input type="file" accept="image/png, image/jpeg"
+												name="multipartFile2" id="banner" />
+
+
 
 										</div>
 
 										<div class="bottomright">
-											<ul style="list-style-type: none">
+											<!-- <ul style="list-style-type: none">
 												<a>
 													<li>Xem shop</li>
 												</a>
-											</ul>
+											</ul> -->
 										</div>
 
 									</div>
 								</div>
-							</form>
+							</form:form>
 						</div>
 					</div>
 				</div>
@@ -369,198 +379,115 @@
 	</div>
 	<!-- ----------------- End MAIN: SETTING  ---------------------- -->
 	<!-- ----------------- Begin FOOTER---------------------- -->
-	<footer class="footer">
-		<div class="footer_top">
-			<div class="footer_top-item">
-				<div class="block_wrapper">
-					<ul class="block_list">
-						<li class="block_item logo"><a href="/"><img
-								src="${pageContext.request.contextPath}/imgs/logo-white.png"
-								alt="logo-white" /></a></li>
-						<li class="block_item"><a class="block_link"
-							href="tel:0906.880.960" title="Hotline: 0906.880.960">Hotline:
-								0906.880.960</a></li>
-						<li class="block_item"><a class="block_link" href="/"
-							title="9h-18h từ Thứ 2 đến Thứ 6">(9h-18h từ Thứ 2 đến Thứ 6)</a>
-						</li>
-						<li class="block_item"><a class="block_link"
-							href="email:customer@dosiinvn.com"
-							title="Email: customer@dosiinvn.com">Email:
-								customer@dosiinvn.com</a></li>
-					</ul>
-					<h5 class="block_heading">Kết nối với chúng tôi</h5>
-					<ul class="block-app-list">
-						<li class="block-app-item"><a
-							href="https://www.instagram.com/dosiin.magz/" title="Instagram"><i
-								class="fab fa-instagram-square"></i></a></li>
-						<li class="block-app-item"><a class="dosiin_d-block"
-							href="https://www.facebook.com/dosiinvietnam/" title="Facebook"><i
-								class="fab fa-facebook"></i></a></li>
-					</ul>
-				</div>
-				<div class="block_wrapper">
-					<h5 class="block_heading">Về Dosiin</h5>
-
-					<ul class="block_list">
-						<li class="block_item"><a class="block_link" href="#">Các
-								điều khoản khác</a></li>
-						<li class="block_item"><a class="block_link" href="#">Hợp
-								tác</a></li>
-						<li class="block_item"><a class="block_link" href="#">Hỏi
-								và Đáp</a></li>
-						<li class="block_item"><a class="block_link" href="#">Hạn
-								chế với thời gian và quản lý</a></li>
-						<li class="block_item"><a class="block_link" href="#">Nghĩa
-								vụ của người bán</a></li>
-						<li class="block_item"><a class="block_link" href="#">Nghĩa
-								vụ của khách hàng</a></li>
-						<li class="block_item"><a class="block_link" href="#">Chính
-								sách vận chuyển</a></li>
-						<li class="block_item"><a class="block_link" href="#">Về
-								chúng tôi</a></li>
-					</ul>
-				</div>
-				<div class="block_wrapper">
-					<h5 class="block_heading">Nội dung chính sách</h5>
-					<ul class="block_list">
-						<li class="block_item"><a class="block_link" href="#">Chính
-								sách bảo mật</a></li>
-						<li class="block_item"><a class="block_link" href="#">Điều
-								khoản dịch vụ</a></li>
-						<li class="block_item"><a class="block_link" href="#">Chính
-								sách thành viên</a></li>
-						<li class="block_item"><a class="block_link" href="#">Chính
-								sách thanh toán</a></li>
-						<li class="block_item"><a class="block_link" href="#">Chính
-								sách bảo mật thanh toán</a></li>
-						<li class="block_item"><a class="block_link" href="#">Chính
-								sách dành cho khách hàng</a></li>
-					</ul>
-				</div>
-				<div class="block_wrapper">
-					<h5 class="block_heading">Cách thức thanh toán</h5>
-					<ul class="block_card-list">
-						<li class="block_card-item">
-							<div class="card-item_list">
-								<a class="block_link" href="/" title="COD Tiền mặt">
-									<div class="card-item_box">
-										<div class="card-item_icon">
-											<img
-												src="${pageContext.request.contextPath}/imgs/social/cod.webp"
-												alt="Tiền mặt" title="Tiền mặt">
-										</div>
-										<div class="card-item_text">Tiền mặt</div>
-									</div>
-								</a><a class="block_link" href="/" title="Momo">
-									<div class="card-item_box">
-										<div class="card-item_icon">
-											<img
-												src="${pageContext.request.contextPath}/imgs/social/momo.png"
-												alt="Momo" title="Momo" />
-										</div>
-										<div class="card-item_text">Momo</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="block_card-item">
-							<div class="card-item_list">
-								<a class="block_link" href="/" title="VISA, MASTER, JCB">
-									<div class="card-item_box">
-										<div class="card-item_icon">
-											<img
-												src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
-												alt="VISA, MASTER, JCB" title="VISA, MASTER, JCB" />
-										</div>
-										<div class="card-item_text">VISA, MASTER, JCB</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="block_card-item">
-							<div class="card-item_list">
-								<a class="block_link" href="/" title="Internet Banking">
-									<div class="card-item_box">
-										<div class="card-item_icon">
-											<img
-												src="${pageContext.request.contextPath}/imgs/social/credit-card.png"
-												alt="Internet Banking" title="Internet Banking" />
-										</div>
-										<div class="card-item_text">Internet Banking</div>
-									</div>
-								</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer_bot">Copyright 2022 &copy; FPT University
-			DaNang</div>
-	</footer>
+	<
 	<script src="${pageContext.request.contextPath}/newjs/popup.js"></script>
-	
-	<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
-	
+
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	<script src="${pageContext.request.contextPath}/js1/jquery.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/js1/jquery-migrate-3.0.0.js"></script>
+	<script src="${pageContext.request.contextPath}/js1/jquery-ui.min.js"></script>
+	<!-- Popper JS -->
+	<script src="${pageContext.request.contextPath}/js1/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="${pageContext.request.contextPath}/js1/bootstrap.min.js"></script>
+	<!-- Color JS -->
+	<script src="${pageContext.request.contextPath}/js1/colors.js"></script>
+	<!-- Slicknav JS -->
+	<script src="${pageContext.request.contextPath}/js1/slicknav.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="${pageContext.request.contextPath}/js1/owl-carousel.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="${pageContext.request.contextPath}/js1/magnific-popup.js"></script>
+	<!-- Fancybox JS -->
+	<script src="${pageContext.request.contextPath}/js1/facnybox.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="${pageContext.request.contextPath}/js1/waypoints.min.js"></script>
+	<!-- Countdown JS -->
+	<script
+		src="${pageContext.request.contextPath}/js1/finalcountdown.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="${pageContext.request.contextPath}/js1/nicesellect.js"></script>
+	<!-- Ytplayer JS -->
+	<script src="${pageContext.request.contextPath}/js1/ytplayer.min.js"></script>
+	<!-- Flex Slider JS -->
+	<script src="${pageContext.request.contextPath}/js1/flex-slider.js"></script>
+	<!-- ScrollUp JS -->
+	<script src="${pageContext.request.contextPath}/js1/scrollup.js"></script>
+	<!-- Onepage Nav JS -->
+	<script src="${pageContext.request.contextPath}/js1/onepage-nav.min.js"></script>
+	<!-- Easing JS -->
+	<script src="${pageContext.request.contextPath}/js1/easing.js"></script>
+	<!-- Active JS -->
+	<script src="${pageContext.request.contextPath}/js1/active.js"></script>
+
 	<script type="text/javascript">
-	$(document).ready(function()
-			{
-			    $('#shopinfo').submit(function(){
-			 
-			        // BƯỚC 1: Lấy dữ liệu từ form
-			        var shopname   = $.trim($('#shopname').val());
-			        var sdtshop   = $.trim($('#sdtshop').val());
-			        var addressshop = $.trim($('#addressshop').val());
-			        var shopdesc = $.trim($('#shopdesc').val());
-			      
-			     
-			 
-			      
-			        var flag = true;
-			 
-			        
-			        if (shopname == '' ){
-			            $('#shopname_error').text('Vui lòng nhập tên cửa hàng !');
-			            flag = false;
-			        }
-			        else{
-			            $('#shopname_error').text('');
-			        }
-			        // subcategory
-			        if (sdtshop == '' ){
-			            $('#sdtshop_error').text('Vui lòng nhập số điện thoại cửa hàng !');
-			            flag = false;
-			        }
-			        else{
-			            $('#sdtshop_error').text('');
-			        }
-			        // codesubcategory
-			        if (addressshop == '' ){
-			            $('#addressshop_error').text('Vui lòng nhập  đia chỉ cửa hàng !');
-			            flag = false;
-			        }
-			        else{
-			            $('#addressshop_error').text('');
-			        }
-			        if (shopdesc == '' ){
-			            $('#shopdesc_error').text('Vui lòng nhập  mô tả cửa hàng !');
-			            flag = false;
-			        }
-			        else{
-			            $('#shopdesc_error').text('');
-			        }
-			 
-			 
-			    
-			 
-			     
-			 
-			        return flag;
-			    });
-			});
-    </script>
+		$(document)
+				.ready(
+						function() {
+							$('#form')
+									.submit(
+											function() {
+
+												// BƯỚC 1: Lấy dữ liệu từ form
+												var shopname = $.trim($(
+														'#shopname').val());
+												var sdtshop = $.trim($(
+														'#sdtshop').val());
+												var addressshop = $.trim($(
+														'#addressshop').val());
+												var shopdesc = $.trim($(
+														'#shopdesc').val());
+
+												var flag = true;
+
+												if (shopname == '') {
+													$('#shopname_error')
+															.text(
+																	'Vui lòng nhập tên cửa hàng !');
+													flag = false;
+												} else {
+													$('#shopname_error').text(
+															'');
+												}
+												// subcategory
+												if (sdtshop == '') {
+													$('#sdtshop_error')
+															.text(
+																	'Vui lòng nhập số điện thoại cửa hàng !');
+													flag = false;
+												} else {
+													$('#sdtshop_error')
+															.text('');
+												}
+												// codesubcategory
+												if (addressshop == '') {
+													$('#addressshop_error')
+															.text(
+																	'Vui lòng nhập  đia chỉ cửa hàng !');
+													flag = false;
+												} else {
+													$('#addressshop_error')
+															.text('');
+												}
+												if (shopdesc == '') {
+													$('#shopdesc_error')
+															.text(
+																	'Vui lòng nhập  mô tả cửa hàng !');
+													flag = false;
+												} else {
+													$('#shopdesc_error').text(
+															'');
+												}
+
+												return flag;
+											});
+						});
+	</script>
+
 </body>
 </html>

@@ -62,11 +62,11 @@ public class RegisterController {
 				return "register";
 			} else if(userEntity.getEmail().equalsIgnoreCase(email))
 			{
-				model.addAttribute("message2", " Email " + email + "đã tồn tại!!");
+				model.addAttribute("message2", " Email " + email + " đã tồn tại!!");
 				return "register";
 			}
 			else if (result.hasErrors() || userEntity.getUsername().equalsIgnoreCase(username)) {
-				model.addAttribute("message1", " Username " + username + "đã tồn tại!!");
+				model.addAttribute("message1", " Username " + username + " đã tồn tại!!");
 				return "register";
 			}
 		}
@@ -80,7 +80,8 @@ public class RegisterController {
 		user.setRoles(listRole);
 		user.setPassword(passwordEncoder.encode(user.getPassword()));
 		userService.saveUser(user);
-		return "redirect:/login";
+		model.addAttribute("message3", "Bạn đã đăng kí thành công, vui lòng chuyển đến trang đăng nhập!!!!");
+		return "register";
 	}
 	
 	@GetMapping({ "/login" })
@@ -101,7 +102,7 @@ public class RegisterController {
 	@GetMapping("/checkRole")
 	public String checkRole(HttpServletRequest request) {
 		if (request.isUserInRole("ROLE_ADMIN")) {
-			return "redirect:/admin/mainAdmin";
+			return "redirect:/admin/listCategory";
 		}
 		return "redirect:/home";
 	}

@@ -92,8 +92,10 @@ public class HomeController {
 	@GetMapping({"/shop-detail"})
 	public String shop(Model model, @RequestParam(name = "id") Integer id) {
 		ShopEntity shop = shopService.findById(id);
+		model.addAttribute("countProduct", productService.countProductOfShop(id));
 		model.addAttribute("shop", shop);
-		model.addAttribute("products", productService.getByIdShop(FIRST_PAGE, id).getContent());
+		//model.addAttribute("products", productService.getByIdShop(FIRST_PAGE, id).getContent());getProductByShopId
+		model.addAttribute("products", productService.getProductByShopId(id));
 		return "shop";
 	}
 	

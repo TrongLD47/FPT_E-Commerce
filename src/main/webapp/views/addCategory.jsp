@@ -10,13 +10,13 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<title>Category</title>
+<title>FPT-EC</title>
 
 <meta name="description" content="" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon"
-	href="${pageContext.request.contextPath}/assets/img/favicon/favicon.ico" />
+	href="../imgs/logo.png" />
 <!-- FontAwsome -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/vendor/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
@@ -78,9 +78,8 @@
 			<aside id="layout-menu"
 				class="layout-menu menu-vertical menu bg-menu-theme">
 				<div class="app-brand demo">
-					<a href="index.html" class="app-brand-link"> <span
-						class="app-brand-logo demo"> <img alt=""
-							src="../imgs/logo.png">
+					<a href="${pageContext.request.contextPath}/home" class="app-brand-link"> <span
+						class="app-brand-logo demo"> <img alt="" src="../imgs/logo.png">
 					</span> <span class="app-brand-text demo menu-text fw-bolder ms-2">FPT-EC</span>
 					</a> <a href="javascript:void(0);"
 						class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -92,8 +91,7 @@
 
 				<ul class="menu-inner py-1">
 					<!-- Dashboard -->
-					<li class="menu-item active"><a
-						href="${pageContext.request.contextPath}/admin/mainAdmin"
+					<li class="menu-item active"><a href="${pageContext.request.contextPath}/admin/mainAdmin"
 						class="menu-link"> <i
 							class="menu-icon tf-icons bx bx-home-circle"></i>
 							<div data-i18n="Analytics">Bảng điều khiển</div>
@@ -108,18 +106,18 @@
 							<div data-i18n="Category">Danh mục</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a
-								href="${pageContext.request.contextPath}/admin/listCategory"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/listCategory"
 								class="menu-link">
 									<div data-i18n="CategoryList">Tất cả danh mục</div>
 							</a></li>
-							<li class="menu-item active"><a
-								href="${pageContext.request.contextPath}/admin/addCategory"
+							<li class="menu-item active"><a href="${pageContext.request.contextPath}/admin/addCategory"
 								class="menu-link">
 									<div data-i18n="AddCategory">Thêm danh mục</div>
 							</a></li>
 
 						</ul></li>
+
+
 
 					<li class="menu-item"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <!-- <i class="menu-icon tf-icons bx bx-dock-top"></i> -->
@@ -127,30 +125,52 @@
 							<div data-i18n="SubCategory">Danh mục phụ</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a
-								href="${pageContext.request.contextPath}/admin/listSubCategory"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/listSubCategory"
 								class="menu-link">
 									<div data-i18n="SubCategoryList">Tất cả danh mục phụ</div>
 							</a></li>
-							<li class="menu-item"><a
-								href="${pageContext.request.contextPath}/admin/addSubCategory"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/addSubCategory"
 								class="menu-link">
 									<div data-i18n="AddSubCategory">Thêm danh mục phụ</div>
 							</a></li>
 
 						</ul></li>
+
+					<!-- <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+              <div data-i18n="SubCategory"> Sub Caregory</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="./SubCategoryList.Html" class="menu-link">
+                  <div data-i18n="SubCategoryList"> Sub Category List</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./AddSubCategory.html" class="menu-link">
+                  <div data-i18n="AddSubCategory">Add Sub Category</div>
+                </a>
+              </li>
+
+            </ul>
+          </li> -->
+
+
+
+
 					<li class="menu-item"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons bx bx-cube-alt"></i>
 							<div data-i18n="Misc">Yêu Cầu</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a href="pages-misc-error.html"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/requestProduct"
 								class="menu-link">
 									<div data-i18n="Error">Yêu cầu sản phẩm</div>
 							</a></li>
 							<li class="menu-item"><a
-								href="pages-misc-under-maintenance.html" class="menu-link">
+								href="${pageContext.request.contextPath}/admin/requestShop" class="menu-link">
 									<div data-i18n="Under Maintenance">Yêu cầu trở thành Shop</div>
 							</a></li>
 						</ul></li>
@@ -213,34 +233,17 @@
 													</div>
 												</div>
 												<div class="flex-grow-1">
-													<span class="fw-semibold d-block">John Doe</span> <small
-														class="text-muted">Admin</small>
+													<span class="fw-semibold d-block">Admin</span> <small
+														class="text-muted"></small>
 												</div>
 											</div>
 									</a></li>
 									<li>
 										<div class="dropdown-divider"></div>
-									</li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-user me-2"></i> <span class="align-middle">My
-												Profile</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-cog me-2"></i> <span class="align-middle">Settings</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <span
-											class="d-flex align-items-center align-middle"> <i
-												class="flex-shrink-0 bx bx-credit-card me-2"></i> <span
-												class="flex-grow-1 align-middle">Billing</span> <span
-												class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-										</span>
-									</a></li>
-									<li>
-										<div class="dropdown-divider"></div>
-									</li>
-									<li><a class="dropdown-item" href="auth-login-basic.html">
+									</li>								
+									<li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">
 											<i class="bx bx-power-off me-2"></i> <span
-											class="align-middle">Log Out</span>
+											class="align-middle">Đăng xuất</span>
 									</a></li>
 								</ul>
 							</li>
@@ -266,32 +269,26 @@
 												<span style="color: red"><c:out value="${message }"></c:out></span>
 											</c:if>
 											<div class="mb-3">
-												<label for="defaultInput" class="form-label">Tên
-													danh mục</label>
+												<label for="defaultInput" class="form-label">Tên danh mục</label>
 												<form:input name="addcate" path="name" id="defaultInput"
 													cssClass="form-control" type="text"
 													placeholder="Nhập tên vào đây" />
-												<span style="color: red" id="addcate_error"></span>
+													 <span  style="color: red" id="addcate_error"></span>
 											</div>
 											<div class="mb-3">
-												<label for="defaultInput" class="form-label">Mã danh
-													mục</label>
+												<label for="defaultInput" class="form-label">Mã danh mục</label>
 												<form:input name="addcode" path="code" id="defaultInput1"
-													class="form-control" type="text"
-													placeholder="Nhập mã vào đây" />
-												<span style="color: red" id="addcode_error"></span>
+													class="form-control" type="text" placeholder="Nhập mã vào đây" />
+													<span  style="color: red" id="addcode_error"></span>
 											</div>
 										</div>
 										<div class="btn btnArond">
 											<a onclick="clearForm()">
-												<button type="button" class="btn btn-warning btn-min-Width">Xóa
-													tất cả</button>
+												<button type="button" class="btn btn-warning">Xóa tất cả</button>
 											</a> <a href="#">
-												<button type="submit" class="btn btn-primary btn-min-Width">Xác
-													nhận</button>
-											</a> <a
-												href="${pageContext.request.contextPath}/admin/listCategory">
-												<button type="button" class="btn btn-danger btn-min-Width">Đóng</button>
+												<button type="submit" class="btn btn-primary">Xác nhận</button>
+											</a> <a href="${pageContext.request.contextPath}/admin/listCategory">
+												<button type="button" class="btn btn-danger">Đóng</button>
 											</a>
 										</div>
 
@@ -302,6 +299,9 @@
 
 						</div>
 					</div>
+
+
+
 
 				</div>
 				<!-- / Content -->
@@ -375,42 +375,51 @@
 	<script src="${pageContext.request.contextPath}/js1/nicesellect.js"></script>
 	<!-- Active JS -->
 	<script src="${pageContext.request.contextPath}/js1/active.js"></script>
-	<script src="http://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-	<script type="text/javascript"
-		src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
-
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#form-addCate').submit(function() {
-
-				// BƯỚC 1: Lấy dữ liệu từ form
-				var defaultInput = $.trim($('#defaultInput').val());
-				var defaultInput1 = $.trim($('#defaultInput1').val());
-
-				var flag = true;
-
-				// category
-				if (defaultInput == '') {
-					$('#addcate_error').text('Vui lòng nhập tên danh mục !');
-					flag = false;
-				} else {
-					$('#addcate_error').text('');
-				}
-				// codecategory
-				if (defaultInput1 == '') {
-					$('#addcode_error').text('Vui lòng nhập  mã danh mục !');
-					flag = false;
-				} else {
-					$('#addcode_error').text('');
-				}
-
-				return flag;
+	$(document).ready(function()
+			{
+			    $('#form-addCate').submit(function(){
+			 
+			        // BƯỚC 1: Lấy dữ liệu từ form
+			        var defaultInput   = $.trim($('#defaultInput').val());
+			        var defaultInput1   = $.trim($('#defaultInput1').val());
+			     
+			 
+			      
+			        var flag = true;
+			 
+			        // category
+			        if (defaultInput == '' ){
+			            $('#addcate_error').text('Vui lòng nhập tên danh mục !');
+			            flag = false;
+			        }
+			        else{
+			            $('#addcate_error').text('');
+			        }
+			        // codecategory
+			        if (defaultInput1 == '' ){
+			            $('#addcode_error').text('Vui lòng nhập  mã danh mục !');
+			            flag = false;
+			        }
+			        else{
+			            $('#addcode_error').text('');
+			        }
+			 
+			 
+			    
+			 
+			     
+			 
+			        return flag;
+			    });
 			});
-		});
-	</script>
-
-
+    </script>
+	
+	
 </body>
 </html>

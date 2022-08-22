@@ -210,4 +210,16 @@ public class ProductServiceImpl implements ProductService {
         return (Page<ProductEntity>) productRepository.findAllBanned(PageRequest.of(page - 1, pagingNumber), id);
     }
 
+	@Override
+	public int countProductOfShop(int id) {
+		// TODO Auto-generated method stub
+		return productRepository.countProductOfShop(id);
+	}
+
+	@Override
+	public List<ProductEntity> getProductByShopId(int id) {
+		// TODO Auto-generated method stub
+		return productRepository.findByShopId(id);
+	}
+
 }

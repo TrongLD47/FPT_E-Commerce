@@ -44,9 +44,9 @@ public class TestViewController {
 		return "listOrderCancel";
 	}
 	
-	@GetMapping({"/updateInfoShop"})
-	public String updateInfoShop() {
-		return "updateInfoShop";
-	}
+//	@GetMapping({"/updateInfoShop"})
+//	public String updateInfoShop() {
+//		return "updateInfoShop";
+//	}
 
 }

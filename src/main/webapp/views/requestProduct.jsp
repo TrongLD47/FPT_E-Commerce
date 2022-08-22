@@ -10,7 +10,12 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product List</title>
+<title>FPT-EC</title>
+
+<meta name="description" content="" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="../imgs/logo.png" />
 <!------------ CSS core ------------ -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/newcss/core.css">
@@ -63,7 +68,7 @@
 
 				</div>
 				<li class="header-bottom-logo"><a href="#"> <img
-						src="${pageContext.request.contextPath}/newimage/logo.svg"
+						src="${pageContext.request.contextPath}/imgs/logo.png"
 						alt="logo" />
 				</a></li>
 			</ul>
@@ -92,7 +97,9 @@
 		</div>
 	</div>
 </header>
+<
 <aside class="nav" id="layout-menu">
+	<i class="fa-solid fa-angle-left" onclick="closeNav()"></i>
 	<nav class="nav__container " id="layout-navbar">
 
 		<div class="list-group">
@@ -103,39 +110,51 @@
 					<div class="nav__items">
 
 						<div class="nav__dropdown">
-							<a href="#" class="nav__link"> <i
-								class='bx bx-closet nav__icon'></i> <span class="nav__name">Product</span>
+							<a class="nav__link"> <i class='bx bx-closet nav__icon'></i>
+								<span class="nav__name">Danh mục</span>
 							</a>
 
 							<div class="nav__dropdown-collapse">
 								<div class="nav__dropdown-content">
-									<a href="/html/ProductList.html" class="nav__dropdown-item">My
-										Products</a> <a href="/html/AddProduct.html"
-										class="nav__dropdown-item">Add New Product</a> <a href="#"
-										class="nav__dropdown-item">Product Banned</a>
+									<a href="${pageContext.request.contextPath}/admin/listCategory"
+										class="nav__dropdown-item">Tất cả danh mục</a> <a
+										href="${pageContext.request.contextPath}/admin/addCategory"
+										class="nav__dropdown-item">Thêm danh mục</a>
 								</div>
 							</div>
 						</div>
 
 						<div class="nav__dropdown">
-							<a href="#" class="nav__link"> <i
-								class='bx bx-task nav__icon'></i> <span class="nav__name">Order</span>
+							<a class="nav__link"> <i class='bx bx-task nav__icon'></i> <span
+								class="nav__name">Danh mục phụ</span>
+
 							</a>
 
 							<div class="nav__dropdown-collapse">
 								<div class="nav__dropdown-content">
-									<a href="/html/OrderList.html" class="nav__dropdown-item">My
-										Orders</a> <a href="/html/OrderCancelList.html"
-										class="nav__dropdown-item">Cancellation</a>
+									<a href="${pageContext.request.contextPath}/admin/listSubCategory"
+										class="nav__dropdown-item">Tât cả danh mục phụ</a> <a
+										href="${pageContext.request.contextPath}/admin/addSubCategory"
+										class="nav__dropdown-item">Thêm danh mục phụ</a>
 								</div>
 							</div>
 						</div>
 
-						<a href="/html/DiscountList.html" class="nav__link"> <i
-							class='bx bxs-discount nav__icon'></i> <span class="nav__name">Discount</span>
-						</a> <a href="#" class="nav__link"> <i
-							class=' bx bxs-bar-chart-square nav__icon'></i> <span
-							class="nav__name">Report</span>
+						<div class="nav__dropdown">
+							<a href=""
+								class="nav__link"> <i class='bx bxs-discount nav__icon'></i>
+								<span class="nav__name">Yêu cầu</span>
+							</a>
+							<div class="nav__dropdown-collapse">
+								<div class="nav__dropdown-content">
+									<a href="${pageContext.request.contextPath}/admin/requestProduct"
+										class="nav__dropdown-item">Yêu cầu duyệt sản phẩm</a> <a
+										href="${pageContext.request.contextPath}/admin/requestShop"
+										class="nav__dropdown-item">Yêu cầu duyệt shop </a>
+								</div>
+							</div>
+						</div>
+					
 						</a>
 					</div>
 				</div>
@@ -170,12 +189,12 @@
 										<div class="btn-group">
 											<a href="#">
 												<button type="submit" class="button btn primary">
-													<span>Search</span>
+													<span>Tìm Kiếm</span>
 												</button>
 											</a> <a href="#">
 												<button type="button"
 													class="btn btn-outline-secondary btn-clear">
-													<span>Clear</span>
+													<span>Xóa</span>
 												</button>
 											</a>
 										</div>
@@ -187,23 +206,23 @@
 
 						<div class="card mb-4">
 							<div class="header-table">
-								<h4 class="card-header">Product Request List</h4>
+								<h4 class="card-header">Yêu cầu sản phẩm</h4>
 							</div>
 							<div class=" table-responsive text-nowrap">
 								<table class="table table-hover">
 									<thead class="table-light">
 										<tr>
 											<th>ID</th>
-											<th>SHOP NAME</th>
-											<th>PRODUCT NAME</th>
-											<th>PRODUCT CODE</th>
-											<th>SUBCATEGORY</th>
-											<th>UNIT PRICE</th>
-											<th>QUANTITY</th>
-											<th>SIZE</th>
-											<th>DISCOUNT PERCENT</th>
-											<th>SALE PRICE</th>
-											<th>Actions</th>
+											<th>Tên cửa hàng</th>
+											<th>Tên sản phẩm</th>
+											<th>Mã sản phẩm</th>
+											<th>Danh mục phụ</th>
+											<th>Giá</th>
+											<th>Số lượng</th>
+											<th>Kích cỡ</th>
+											<th>Phần trăm KM</th>
+											<th>Giá KM</th>
+											<th>Thao tác</th>
 										</tr>
 									</thead>
 									<tbody class=" table-border-bottom-0">
@@ -216,7 +235,7 @@
 														<th scope="row"><c:out value="${theCount.count}"></c:out></th>
 														<td><c:out value="${item.shopEntity.name }"></c:out></td>
 														<td><c:out value="${item.name }"></c:out></td>
-														<td><c:out value="${item.code }"></c:out></td>							
+														<td><c:out value="${item.code }"></c:out></td>
 														<td><c:out value="${item.subCategoryEntity.nameSub }"></c:out></td>
 														<td><c:out value="${item.unitPrice }"></c:out></td>
 														<td><c:out value="${item.quantity }"></c:out></td>
@@ -231,11 +250,10 @@
 																</button>
 																<div class="dropdown-menu ">
 																	<a class="dropdown-item"
-																	href="${pageContext.request.contextPath}/admin/updateRequestProduct?id=${item.id }"><i
-																	class="bx bx-edit-alt me-1"></i> View</a>
+																		href="${pageContext.request.contextPath}/admin/updateRequestProduct?id=${item.id }"><i
+																		class="bx bx-edit-alt me-1"></i> View</a>
 																</div>
-															</div>
-														</td>
+															</div></td>
 													</tr>
 												</c:forEach>
 												<tr>

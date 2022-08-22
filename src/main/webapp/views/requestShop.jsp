@@ -14,13 +14,13 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<title>Request Shop</title>
+<title>FPT-EC Admin</title>
 
 <meta name="description" content="" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon"
-	href="../assets/img/favicon/favicon.ico" />
+	href="../imgs/logo.png" />
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 <!--------------- form ------------------------------- -->
@@ -71,10 +71,10 @@
 		<div class="layout-container">
 			<!-- Menu -->
 
-			<aside id="layout-menu"
+				<aside id="layout-menu"
 				class="layout-menu menu-vertical menu bg-menu-theme">
 				<div class="app-brand demo">
-					<a href="index.html" class="app-brand-link"> <span
+					<a href="${pageContext.request.contextPath}/home" class="app-brand-link"> <span
 						class="app-brand-logo demo"> <img alt="" src="../imgs/logo.png">
 					</span> <span class="app-brand-text demo menu-text fw-bolder ms-2">FPT-EC</span>
 					</a> <a href="javascript:void(0);"
@@ -87,8 +87,7 @@
 
 				<ul class="menu-inner py-1">
 					<!-- Dashboard -->
-					<li class="menu-item"><a
-						href="${pageContext.request.contextPath}/admin/mainAdmin"
+					<li class="menu-item active"><a href="${pageContext.request.contextPath}/admin/mainAdmin"
 						class="menu-link"> <i
 							class="menu-icon tf-icons bx bx-home-circle"></i>
 							<div data-i18n="Analytics">Bảng điều khiển</div>
@@ -97,55 +96,77 @@
 					<!-- E-Commerce -->
 					<li class="menu-header small text-uppercase"><span
 						class="menu-header-text">E-Commerce</span></li>
-					<li class="menu-item active"><a href="javascript:void(0);"
+					<li class="menu-item "><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons bx bx-dock-top"></i>
 							<div data-i18n="Category">Danh mục</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a
-								href="${pageContext.request.contextPath}/admin/listCategory"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/listCategory"
 								class="menu-link">
 									<div data-i18n="CategoryList">Tất cả danh mục</div>
 							</a></li>
-							<li class="menu-item active"><a
-								href="${pageContext.request.contextPath}/admin/addCategory"
+							<li class="menu-item "><a href="${pageContext.request.contextPath}/admin/addCategory"
 								class="menu-link">
 									<div data-i18n="AddCategory">Thêm danh mục</div>
 							</a></li>
 
 						</ul></li>
+
+
+
 					<li class="menu-item"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <!-- <i class="menu-icon tf-icons bx bx-dock-top"></i> -->
 							<i class="menu-icon tf-icons bx bx-copy"></i>
 							<div data-i18n="SubCategory">Danh mục phụ</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a
-								href="${pageContext.request.contextPath}/admin/listSubCategory"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/listSubCategory"
 								class="menu-link">
 									<div data-i18n="SubCategoryList">Tất cả danh mục phụ</div>
 							</a></li>
-							<li class="menu-item"><a
-								href="${pageContext.request.contextPath}/admin/addSubCategory"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/addSubCategory"
 								class="menu-link">
 									<div data-i18n="AddSubCategory">Thêm danh mục phụ</div>
 							</a></li>
 
 						</ul></li>
 
-					<li class="menu-item"><a href="javascript:void(0);"
+					<!-- <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+              <div data-i18n="SubCategory"> Sub Caregory</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="./SubCategoryList.Html" class="menu-link">
+                  <div data-i18n="SubCategoryList"> Sub Category List</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./AddSubCategory.html" class="menu-link">
+                  <div data-i18n="AddSubCategory">Add Sub Category</div>
+                </a>
+              </li>
+
+            </ul>
+          </li> -->
+
+
+
+
+					<li class="menu-item active"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons bx bx-cube-alt"></i>
 							<div data-i18n="Misc">Yêu Cầu</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a href="pages-misc-error.html"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/requestProduct"
 								class="menu-link">
 									<div data-i18n="Error">Yêu cầu sản phẩm</div>
 							</a></li>
-							<li class="menu-item"><a
-								href="pages-misc-under-maintenance.html" class="menu-link">
+							<li class="menu-item active"><a
+								href="${pageContext.request.contextPath}/admin/requestShop" class="menu-link">
 									<div data-i18n="Under Maintenance">Yêu cầu trở thành Shop</div>
 							</a></li>
 						</ul></li>
@@ -173,13 +194,13 @@
 						<form:form
 							action="${pageContext.request.contextPath}/admin/doSearchShop"
 							method="get">
-							<div class="navbar-nav align-items-center">
-								<div class="nav-item d-flex align-items-center">
-									<i class="bx bx-search fs-4 lh-0"></i> <input type="text"
-										class="form-control border-0 shadow-none"
-										placeholder="Search..." />
-								</div>
+						<div class="navbar-nav align-items-center">
+							<div class="nav-item d-flex align-items-center">
+								<i class="bx bx-search fs-4 lh-0"></i> <input type="text"
+									class="form-control border-0 shadow-none"
+									placeholder="Search..." />
 							</div>
+						</div>
 						</form:form>
 						<!-- /Search -->
 
@@ -220,26 +241,13 @@
 									<li>
 										<div class="dropdown-divider"></div>
 									</li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-user me-2"></i> <span class="align-middle">Thông
-												tin</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-cog me-2"></i> <span class="align-middle">Settings</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <span
-											class="d-flex align-items-center align-middle"> <i
-												class="flex-shrink-0 bx bx-credit-card me-2"></i> <span
-												class="flex-grow-1 align-middle">Billing</span> <span
-												class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-										</span>
-									</a></li>
-									<li>
-										<div class="dropdown-divider"></div>
-									</li>
-									<li><a class="dropdown-item" href="auth-login-basic.html">
+									
+									
+									
+									
+									<li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">
 											<i class="bx bx-power-off me-2"></i> <span
-											class="align-middle">Log Out</span>
+											class="align-middle">Đăng xuất</span>
 									</a></li>
 								</ul>
 							</li>
@@ -281,7 +289,8 @@
 
 														<td><c:out value="${item.id }"></c:out></td>
 														<td><c:out value="${item.userEntity.username } "></c:out></td>
-														<td><c:out value="${item.name }"></c:out></td>
+														<td><c:out value="${item.name }"></c:out>
+														</td>
 														<td><c:out value="${item.userEntity.createTime }"></c:out>
 														</td>
 														<td>
@@ -293,8 +302,8 @@
 																</button>
 																<div class="dropdown-menu ">
 																	<a class="dropdown-item"
-																		href="${pageContext.request.contextPath}/admin/updateShopStatus?id=${item.id }"><i
-																		class="bx bx-edit-alt me-1"></i> Chi tiết</a>
+																	href="${pageContext.request.contextPath}/admin/updateShopStatus?id=${item.id }"><i
+																	class="bx bx-edit-alt me-1"></i> Chi tiết</a>
 																</div>
 															</div>
 														</td>

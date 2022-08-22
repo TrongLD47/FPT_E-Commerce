@@ -10,13 +10,14 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<title>Add SubCategory</title>
+<title>FPT-EC</title>
 
 <meta name="description" content="" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon"
-	href="${pageContext.request.contextPath}/assets/img/favicon/favicon.ico" />
+	href="../imgs/logo.png" />
+
 <!-- FontAwsome -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/vendor/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
@@ -68,7 +69,7 @@
 			<aside id="layout-menu"
 				class="layout-menu menu-vertical menu bg-menu-theme">
 				<div class="app-brand demo">
-					<a href="index.html" class="app-brand-link"> <span
+					<a href="${pageContext.request.contextPath}/home" class="app-brand-link"> <span
 						class="app-brand-logo demo">  <img alt="" src="../imgs/logo.png">
 					</span> <span class="app-brand-text demo menu-text fw-bolder ms-2">FPT-EC</span>
 					</a> <a href="javascript:void(0);"
@@ -81,7 +82,7 @@
 
 				<ul class="menu-inner py-1">
 					<!-- Dashboard -->
-					<li class="menu-item active"><a href="index.html"
+					<li class="menu-item active"><a href=""
 						class="menu-link"> <i
 							class="menu-icon tf-icons bx bx-home-circle"></i>
 							<div data-i18n="Analytics">Bảng điều khiển</div>
@@ -148,20 +149,19 @@
 
 
 
-
-					<li class="menu-item"><a href="javascript:void(0);"
+<li class="menu-item"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons bx bx-cube-alt"></i>
-							<div data-i18n="Misc">Misc</div>
+							<div data-i18n="Misc">Yêu Cầu</div>
 					</a>
 						<ul class="menu-sub">
-							<li class="menu-item"><a href="pages-misc-error.html"
+							<li class="menu-item"><a href="${pageContext.request.contextPath}/admin/requestProduct"
 								class="menu-link">
-									<div data-i18n="Error">Error</div>
+									<div data-i18n="Error">Yêu cầu sản phẩm</div>
 							</a></li>
 							<li class="menu-item"><a
-								href="pages-misc-under-maintenance.html" class="menu-link">
-									<div data-i18n="Under Maintenance">Under Maintenance</div>
+								href="${pageContext.request.contextPath}/admin/requestShop" class="menu-link">
+									<div data-i18n="Under Maintenance">Yêu cầu trở thành Shop</div>
 							</a></li>
 						</ul></li>
 				</ul>
@@ -223,34 +223,17 @@
 													</div>
 												</div>
 												<div class="flex-grow-1">
-													<span class="fw-semibold d-block">John Doe</span> <small
-														class="text-muted">Admin</small>
+													<span class="fw-semibold d-block">Admin</span> <small
+														class="text-muted"></small>
 												</div>
 											</div>
 									</a></li>
 									<li>
 										<div class="dropdown-divider"></div>
-									</li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-user me-2"></i> <span class="align-middle">My
-												Profile</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <i
-											class="bx bx-cog me-2"></i> <span class="align-middle">Settings</span>
-									</a></li>
-									<li><a class="dropdown-item" href="#"> <span
-											class="d-flex align-items-center align-middle"> <i
-												class="flex-shrink-0 bx bx-credit-card me-2"></i> <span
-												class="flex-grow-1 align-middle">Billing</span> <span
-												class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-										</span>
-									</a></li>
-									<li>
-										<div class="dropdown-divider"></div>
-									</li>
-									<li><a class="dropdown-item" href="auth-login-basic.html">
+									</li>								
+									<li><a class="dropdown-item" href="${pageContext.request.contextPath}/logout">
 											<i class="bx bx-power-off me-2"></i> <span
-											class="align-middle">Log Out</span>
+											class="align-middle">Đăng xuất</span>
 									</a></li>
 								</ul>
 							</li>

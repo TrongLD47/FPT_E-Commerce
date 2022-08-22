@@ -120,9 +120,9 @@
 									</c:when>
 									<c:when test="${sessionScope.email != null}">
 										<li><a
-											href="${pageContext.request.contextPath}/customer/updateProfile">
+											href="${pageContext.request.contextPath}/shop/updateShopInfo">
 												Thông tin </a></li>
-										<li><a href="logout"> Đăng xuất </a></li>
+										<li><a href="${pageContext.request.contextPath}/logout"> Đăng xuất </a></li>
 
 									</c:when>
 
@@ -182,9 +182,9 @@
 								<div class="nav__dropdown-collapse">
 									<div class="nav__dropdown-content">
 										<a href="${pageContext.request.contextPath}/shop/listOrder"
-											class="nav__dropdown-item">Tât cả đơn hàng</a> <a
-											href="${pageContext.request.contextPath}/shop/listOrderCancel"
-											class="nav__dropdown-item">Đơn hủy</a>
+											class="nav__dropdown-item">Tât cả đơn hàng</a> 
+											<a href=""
+											class="nav__dropdown-item"></a> 
 									</div>
 								</div>
 							</div>

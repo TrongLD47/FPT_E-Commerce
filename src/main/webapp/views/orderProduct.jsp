@@ -52,7 +52,7 @@
 			<div class="header-top">
 				<div class="header-top-left">
 					<i class="fas fa-home header-top-left-link"></i> <a
-						class="header-top-left-link" href="#">Bán hàng cùng Dosiin</a>
+						class="header-top-left-link" href="#">Bán hàng cùng FEC</a>
 				</div>
 				<div class="header-top-right">
 					<div>
@@ -284,22 +284,22 @@
 								class="btn btn-primary"><span>Đến trang mua hàng</span></a>
 						</div>
 						<p class="product__is-origin">Sản phẩm không bán trực tiếp
-							trên Dosiin</p>
+							trên FEC</p>
 					</div>
 					<div class="product__box--detail">
 						<div class="marketplace">
 							<img src="/assets/imgs/icons/marketplace.png" alt="" srcset="" />
 							<div class="marketplace__wrapper">
 								<h6 class="marketplace__description">Sản phẩm không được
-									phân phối chính hãng tại Dosiin</h6>
+									phân phối chính hãng tại FEC</h6>
 								<div class="marketplace__policy">
 									<p>Tìm hiểu chính sách</p>
 									<span class="marketplace__link"><i
 										class="fa-solid fa-circle-info"></i><span
 										class="marketplace__popup"><strong>Tiếp thị
 												liên kết:</strong>&nbsp;Các thương hiệu đang hợp tác quảng cáo với
-											Dosiin. Người dùng sau khi nhấn “Đặt hàng ngay” trên
-											Dosi-in.com sẽ được chuyển đến trang web của thương hiệu để
+											FEC. Người dùng sau khi nhấn “Đặt hàng ngay” trên
+											FEC.com sẽ được chuyển đến trang web của thương hiệu để
 											hoàn tất việc mua hàng. Các chính sách khuyến mãi, thanh toán
 											và đổi trả sẽ được áp dụng theo chính sách của thương hiệu
 											đó.</span></span>
